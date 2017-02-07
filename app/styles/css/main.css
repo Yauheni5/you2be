@@ -9,11 +9,12 @@ header {
   background-color: white;
 }
 .top-header {
-	position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 0px;
 }
 .top-header .menu {
   max-width: 5%;
