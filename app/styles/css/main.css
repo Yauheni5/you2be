@@ -1,0 +1,35 @@
+body {
+  font-family: Roboto, arial, sans-serif;
+  font-size: 13px;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: white;
+}
+.top-header {
+	position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header .menu {
+  max-width: 5%;
+}
+.top-header .logo {
+  max-width: 10%;
+}
+.top-header .button-input {
+  max-width: 70%;
+}
+.top-header .add-video {
+  max-width: 5%;
+}
+.top-header .new-message {
+  max-width: 5%;
+}
+.top-header .account {
+  max-width: 5%;
+}
