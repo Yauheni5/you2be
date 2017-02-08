@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<title>You2be</title>
 	<meta charset="utf-8">
@@ -7,16 +7,26 @@
 	<link href="app/images/favicon.ico" rel="shortcut icon">
 	<link rel="stylesheet" href="app/styles/css/main.css">
 </head>
-<body>
-	<header>
-		<div class="top-header">
-			<div class="menu">меню</div>
-			<div class="logo">лого</div>
-			<div class="button-input">поле+кнопка поиска</div>
-			<div class="add-video">добавить видео</div>
-			<div class="new-message">непрочитанные уведомления</div>
-			<div class="account">google account</div>
-		</div>
-	</header>
-</body>
+	<body>
+		<header>
+			<div class="top-header">
+				<a href="#">
+					<div class="icon-menu"></div>
+				</a>
+				<div class="logo">
+					<a href="#">
+						<div class="icon-logo"></div>
+						<sup class="region">BY</sup>
+					</a>
+				</div>
+				<div class="input-search">
+					<form id="search-form">
+						<input name="search" placeholder="Введите запрос" size="auto">
+					</form>
+					<img src="app/images/keyboard.gif">
+					<button class="icon-button-search" form="search-form"></button>
+				</div>
+			</div>
+		</header>
+	</body>
 </html>

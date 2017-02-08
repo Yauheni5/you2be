@@ -4,34 +4,75 @@ body {
 	background-color: #f1f1f1;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 header {
 	background-color: white;
+	position: fixed;
+	width: 100%;
+  margin:0px;
+  padding:0px 0px 0px 25px;
+  border-bottom: 1px solid #e8e8e8;
 }
 .top-header	{
 	display: flex;
 	flex-direction: row;
-	justify-content:space-between;
+	flex-wrap:nowrap;
+	width: 100%;
+	justify-content:space-around;
 	align-items: center;
-	border-bottom: 1px solid #e8e8e8;
-
 	padding: 10px 0px;
-	.menu {
-		max-width: 5%;
+	a {
+		text-decoration: none;
 	}
-	.logo {
-		max-width: 10%;
+}
+.icon-menu {
+	width:20px;
+	height: 20px;
+	background: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4T5KLq.webp") no-repeat;
+	background-position:-20px -204px;
+	margin-right: 20px;
+}
+.logo {
+	max-width: 10%;
+}
+.icon-logo {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 71px;
+	height: 31px;
+	background: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4T5KLq.webp") no-repeat;
+	background-position:-102px -620px;
+}
+.region {
+	margin: 0px;
+	padding: 0px;
+	color: #767676;
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: top;
+}
+.input-search {
+	padding: 0;
+	display: flex;
+	align-items: center;
+	max-width: 650px;
+	overflow: hidden;
+	input{
+		height: 25px;
+		width: 100%;
 	}
-	.button-input {
-		max-width: 70%;
+	.icon-button-search {
+		width: 60px;
+		height: 30px;
+		background-image: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp");
+		background-repeat: no-repeat;
+		background-position:-299px -325px;
 	}
-	.add-video {
-		max-width: 5%;
-	}
-	.new-message {
-		max-width: 5%;
-	}
-	.account {
-		max-width: 5%;
+	img {
+		width:30px;
+		height:20px;
 	}
 }
