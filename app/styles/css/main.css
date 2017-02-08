@@ -67,12 +67,34 @@ header {
 }
 .input-search .icon-button-search {
   width: 60px;
-  height: 30px;
+  height: 31px;
   background-image: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp");
   background-repeat: no-repeat;
   background-position: -299px -325px;
 }
-.input-search img {
+.input-search .keyboard-box img {
+  padding-top: 3px;
+  width: 19px;
+  height: 15px;
+  margin-left: -17px;
+}
+.add-video {
+  display: flex;
+}
+.add-video a {
   width: 30px;
-  height: 20px;
+  height: 30px;
+  background-image: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp");
+  background-repeat: no-repeat;
+  background-position: -366px -246px;
+}
+.g-account {
+  display: flex;
+}
+.g-account .message {
+  width: 30px;
+  height: 30px;
+  background-image: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp");
+  background-repeat: no-repeat;
+  background-position: -391px -391px;
 }
