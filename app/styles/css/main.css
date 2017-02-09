@@ -18,8 +18,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  padding: 10px 40px 10px 20px;
-  max-width: 1470px;
+  padding: 10px 60px 10px 35px;
 }
 .top-header a {
   text-decoration: none;
@@ -47,6 +46,9 @@ header {
   margin-top: 4px;
   margin-right: 17px;
 }
+.icon-menu:hover {
+  opacity: 1;
+}
 .icon-logo {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -425px -391px;
   width: 73px;
@@ -62,13 +64,13 @@ header {
   vertical-align: top;
 }
 .input-search {
-  width: 85%;
+  width: 80%;
   align-items: center;
   line-height: 30px;
   margin-left: 87px;
 }
 .input-search input {
-  width: 500px;
+  max-width: 650px;
   height: 26px;
   padding: 0 10px;
   font-size: 16px;
@@ -103,12 +105,18 @@ header {
   height: 24px;
   opacity: 0.55;
 }
+.add-video a:hover {
+  opacity: 1;
+}
 .g-account .message {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -391px -391px;
   width: 30px;
   height: 30px;
   opacity: 0.50;
   margin-right: 9px;
+}
+.g-account .message:hover {
+  opacity: 1;
 }
 .g-account .google-account {
   justify-content: center;
