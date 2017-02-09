@@ -27,7 +27,6 @@ header {
 .top-header sup,
 .top-header a,
 .top-header input,
-.top-header form,
 .top-header img {
   display: flex;
 }
@@ -64,29 +63,27 @@ header {
   vertical-align: top;
 }
 .input-search {
-  width: 80%;
-  align-items: center;
-  line-height: 30px;
-  margin-left: 87px;
+  width: 100%;
 }
-.input-search input {
+input {
+  width: 100%;
   max-width: 650px;
-  height: 26px;
+  line-height: 26px;
+  margin-left: 87px;
   padding: 0 10px;
   font-size: 16px;
   font-weight: 500;
-  border: 1px solid #a9a9a9;
 }
-.input-search .icon-button-search {
+.icon-button-search {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -296px -324px;
   width: 62px;
   background-color: #f8f8f8;
-  height: 28px;
+  height: 30px;
   cursor: pointer;
   border: 1px solid #a9a9a9;
   border-left: none;
 }
-.input-search .keyboard-box img {
+.keyboard-box img {
   padding-top: 10px;
   margin-right: 5px;
   width: 19px;
