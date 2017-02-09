@@ -18,8 +18,8 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  width: 100%;
-  padding: 10px 33px;
+  padding: 10px 40px 10px 20px;
+  max-width: 1470px;
 }
 .top-header a {
   text-decoration: none;
@@ -32,20 +32,23 @@ header {
 .top-header img {
   display: flex;
 }
-.icon-menu {
-  flex-grow: 1;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -331px;
-  background-size: auto;
-  width: 16px;
-  height: 20px;
-  opacity: 0.80;
+.left-header {
+  width: 4%;
+  margin-right: 70px;
 }
-.logo {
-  flex-grow: 2;
+.right-header {
+  width: 10%;
+}
+.icon-menu {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
+  width: 16px;
+  height: 24px;
+  opacity: 0.80;
+  margin-top: 4px;
+  margin-right: 17px;
 }
 .icon-logo {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -425px -391px;
-  background-size: auto;
   width: 73px;
   height: 30px;
 }
@@ -59,24 +62,31 @@ header {
   vertical-align: top;
 }
 .input-search {
+  width: 85%;
   align-items: center;
-  overflow: hidden;
-  flex-grow: 5;
+  line-height: 30px;
+  margin-left: 87px;
 }
 .input-search input {
+  width: 500px;
   height: 26px;
-  width: 100%;
-  padding: 0 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #a9a9a9;
 }
 .input-search .icon-button-search {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -299px -324px;
-  width: 60px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -296px -324px;
+  width: 62px;
   background-color: #f8f8f8;
-  height: 32px;
+  height: 28px;
   cursor: pointer;
+  border: 1px solid #a9a9a9;
+  border-left: none;
 }
 .input-search .keyboard-box img {
-  padding-top: 3px;
+  padding-top: 10px;
+  margin-right: 5px;
   width: 19px;
   height: 11px;
   margin-left: -24px;
@@ -84,7 +94,7 @@ header {
   cursor: pointer;
 }
 .add-video {
-  flex-grow: 1;
+  padding-right: 40px;
 }
 .add-video a {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
@@ -93,15 +103,12 @@ header {
   height: 24px;
   opacity: 0.55;
 }
-.g-account {
-  flex-grow: 1;
-}
 .g-account .message {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -391px -391px;
-  background-size: auto;
   width: 30px;
   height: 30px;
   opacity: 0.50;
+  margin-right: 9px;
 }
 .g-account .google-account {
   justify-content: center;
@@ -115,4 +122,9 @@ header {
 }
 .g-account .google-account a {
   color: white;
+}
+@media screen and (max-width: 768px) {
+  html {
+    display: none;
+  }
 }
