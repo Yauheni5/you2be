@@ -18,7 +18,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  padding: 10px 60px 10px 35px;
+  padding: 10px 0px 10px 28px;
 }
 .top-header a {
   text-decoration: none;
@@ -32,18 +32,19 @@ header {
 }
 .left-header {
   width: 4%;
-  margin-right: 57px;
+  margin-right: 147px;
 }
 .right-header {
-  width: 10%;
+  width: 20%;
+  padding-left: 90px;
 }
 .icon-menu {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
   width: 16px;
   height: 24px;
-  opacity: 0.80;
+  opacity: 0.6;
   margin-top: 4px;
-  margin-right: 17px;
+  margin-right: 14px;
 }
 .icon-menu:hover {
   opacity: 1;
@@ -54,31 +55,44 @@ header {
   height: 30px;
 }
 .region {
-  margin: 0px;
-  padding: 0px;
   color: #767676;
-  font-size: 11px;
-  font-weight: normal;
-  text-decoration: none;
-  vertical-align: top;
+  font-size: 10px;
+  font-weight: 500;
 }
 .input-search {
   width: 100%;
 }
 input {
-  width: 100%;
+  width: 76%;
   max-width: 540px;
-  margin-left: 87px;
-  padding: 0px 32px 0px 10px;
+  padding: 0px 32px 0px 5px;
+  line-height: 25px;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 500;
   outline: none;
+}
+input:hover {
+  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.1);
+  border-bottom: none;
+}
+::-webkit-input-placeholder {
+  color: #808080;
+}
+::-moz-placeholder {
+  color: #808080;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #808080;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #808080;
 }
 .icon-button-search {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -294px -324px;
-  width: 64px;
+  width: 66px;
   background-color: #f8f8f8;
-  height: 30px;
   cursor: pointer;
   border: 1px solid #a9a9a9;
   border-left: none;
@@ -101,6 +115,9 @@ input {
 .add-video {
   padding-right: 40px;
 }
+.add-video .window-hint {
+  display: none;
+}
 .add-video a {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
   background-size: auto;
@@ -116,7 +133,7 @@ input {
   width: 30px;
   height: 30px;
   opacity: 0.50;
-  margin-right: 9px;
+  margin-right: 13px;
 }
 .g-account .message:hover {
   opacity: 1;
