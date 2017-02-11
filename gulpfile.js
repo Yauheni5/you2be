@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('less', function() {
-	return gulp.src('app/styles/less/main.less')
+	return gulp.src('app/styles/less/style.less')
 	.pipe(less())
 	.pipe(gulp.dest('app/styles/css'))
 	.pipe(browserSync.reload( {

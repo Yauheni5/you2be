@@ -115,9 +115,6 @@ input:hover {
 .add-video {
   padding-right: 40px;
 }
-.add-video .window-hint {
-  display: none;
-}
 .add-video a {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
   background-size: auto;

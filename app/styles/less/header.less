@@ -1,7 +1,10 @@
+@import './color.less';
+
+
 body {
 	font-family: Roboto,arial,sans-serif;
 	font-size: 13px;
-	background-color: #f1f1f1;
+	background-color: @bg-body-color;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -11,7 +14,7 @@ header {
 	position: fixed;
 	width: 100%;
   margin:0px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid @border-bottom-header;
 }
 .top-header	{
 	display: flex;
@@ -81,12 +84,12 @@ input{
 .icon-button-search {
 	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -294px -324px;
 	width: 66px;
-	background-color: #f8f8f8;
+	background-color:@icon-button-search-bg-color;
 	cursor: pointer;
-	border:1px solid #a9a9a9;
+	border:1px solid @icon-button-search-border-color;
 	border-left: none;
 	&:hover {
-		background-color: #e1e1e1;
+		background-color: @icon-button-search-bg-hover-color;
 	}
 }
 	.keyboard-box img {
@@ -104,9 +107,6 @@ input{
 
 .add-video {
 	padding-right: 40px;
-	.window-hint {
-		display: none;
-	}
 	a {
 		background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
 	  background-size: auto;
@@ -135,7 +135,7 @@ input{
 		width: 30px;
 		height: 30px;
 		border-radius: 15px;
-		background-color: #59391d;
+		background-color: @icon-google-account-bg-color;
 		text-align: center;
 		vertical-align: center;
 		a {
