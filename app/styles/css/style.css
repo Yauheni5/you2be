@@ -153,3 +153,18 @@ input:hover {
     display: none;
   }
 }
+.content {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.left-content-column {
+  width: 70%;
+}
+.left-content-column .main-video video {
+  max-width: 700px;
+  height: 500px;
+}
+.right-content-column {
+  width: 30%;
+}
