@@ -1,2 +1,3 @@
 var hello = 'Я - JavaScript';
-		alert(hello);
+	alert(hello);
+
