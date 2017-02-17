@@ -5,11 +5,11 @@ var empty = 'Пожалуйста, введите значение для пои
 window.onload = function() {
 	alert(hello);
 	document.getElementById('buttonSearch').onclick = function() {
-		if (document.getElementById('inputSearch').value; == '') {
+		if (document.getElementById('inputSearch').value == '') {
 			alert(empty);
 		}
 		else {
-	  	alert(document.getElementById('inputSearch').value;);
+	  	alert(document.getElementById('inputSearch').value);
 		}
 	}
 }
