@@ -1,7 +1,7 @@
 var hello = 'Мы рады видеть Вас!';
 var empty = 'Пожалуйста, введите значение для поиска'
 
-onload = function() {
+window.onload = function() {
 	alert(hello);
 	document.getElementById('buttonSearch').onclick = function() {
 		if (document.getElementById('inputSearch').value == '') {
