@@ -4,14 +4,26 @@ var empty = 'Пожалуйста, введите значение для пои
 
 window.onload = function() {
 	alert(hello);
+
 	document.getElementById('buttonSearch').onclick = function() {
-		if (document.getElementById('inputSearch').value == '') {
+		var inpSearch = document.getElementById('inputSearch').value;
+		if (inpSearch == '')  {
 			alert(empty);
 		}
 		else {
-	  	alert(document.getElementById('inputSearch').value);
+	  	alert(inpSearch);
+		}
+	}
+
+	document.getElementById('inputSearch').onkeypress = function() {
+		if (event.keyCode == 13) {
+			var inpSearch = document.getElementById('inputSearch').value;
+			if (inpSearch == '') {
+				alert(empty);
+			}
+			else {
+				alert(inpSearch);
+			}
 		}
 	}
 }
-
-
