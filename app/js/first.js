@@ -4,7 +4,7 @@ var empty = 'Пожалуйста, введите значение для пои
 window.onload = function() {
 	alert(hello);
 
-	document.getElementById('buttonSearch').onclick = function() {
+	function searchFunction() {
 		var inpSearch = document.getElementById('inputSearch').value;
 		if (inpSearch == '')  {
 			alert(empty);
@@ -14,15 +14,11 @@ window.onload = function() {
 		}
 	}
 
-	document.getElementById('inputSearch').onkeypress = function() {
-		if (event.keyCode == 13) {
-			var inpSearch = document.getElementById('inputSearch').value;
-			if (inpSearch == '') {
-				alert(empty);
-			}
-			else {
-				alert(inpSearch);
-			}
-		}
+	document.getElementById('buttonSearch').onclick = function () {
+		searchFunction();
+	}
+
+	document.getElementById('inputSearch').onkeypress = function (){
+		if (event.keyCode == 13) searchFunction();
 	}
 }

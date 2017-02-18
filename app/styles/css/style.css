@@ -182,8 +182,36 @@ input:hover {
   vertical-align: center;
 }
 @media screen and (max-width: 768px) {
-  html {
+  header {
+    background-color: #e62117;
+    opacity: 1;
+    margin: 0px;
+    padding: 0px;
+  }
+  .top-header {
+    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .top-header .left-header {
+    margin: 0px;
+    justify-content: space-between;
+  }
+  .top-header .left-header .logo {
+    flex: 1;
+    order: -1;
+  }
+  .top-header .left-header .url-icon-menu {
+    flex: 1;
+  }
+  .top-header .center-header input {
     display: none;
+  }
+  .top-header .center-header .img-keyboard {
+    display: none;
+  }
+  .top-header .center-header button {
+    order: -3;
   }
 }
 .content {

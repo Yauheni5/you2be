@@ -179,8 +179,40 @@ input{
 		vertical-align: center;
 	}
 }
+
 @media screen and (max-width: 768px) {
-	html{
-		display:none;
+	header {
+		background-color: @red-header-color;
+		opacity: 1;
+		margin:0px;
+		padding: 0px;
+	}
+	.top-header {
+		padding: 0px;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		.left-header {
+			margin:0px;
+			justify-content: space-between;
+			.logo{
+				flex: 1;
+				order:-1;
+			}
+			.url-icon-menu {
+				flex: 1;
+			}
+		}
+		.center-header {
+			input {
+				display:none;
+			}
+			.img-keyboard {
+				display: none;
+			}
+			button {
+				order:-3;
+			}
+		}
 	}
 }
+
