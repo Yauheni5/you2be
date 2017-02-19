@@ -9,17 +9,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
-.icon-menu {
-	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
-	width: 16px;
-	height: 24px;
-	opacity:0.6;
-	margin-top: 4px;
-	margin-right: 14px;
-	&:hover {
-		opacity: 1;
-	}
-}
+
 
 header {
 	background-color: white;
@@ -32,13 +22,24 @@ header {
   		opacity: 1;
   	}
   }
+  .icon-menu {
+		background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
+		width: 16px;
+		height: 24px;
+		opacity:0.6;
+		margin-top: 4px;
+		margin-right: 14px;
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 .top-header	{
 	display: flex;
 	flex-direction: row;
 	flex-wrap:nowrap;
-	justify-content:space-around;
-	padding: 10px 0px 10px 28px;
+	justify-content: space-between;
+  padding: 10px 0px 10px 42px;
 	a {
 		text-decoration: none;
 	}
@@ -48,7 +49,7 @@ header {
 }
 .left-header {
 	width: 4%;
-	margin-right: 151px;
+	margin-right: 134px;
 }
 .right-header {
 	width: 20%;
@@ -75,13 +76,13 @@ header {
   font-weight: 500;
 }
 .input-search {
-	width: 100%;
+	width: 90%;
 }
 input{
-  width: 76%;
-  max-width: 540px;
+  width: 100%;
+  max-width: 580px;
   height: 27px;
-	padding: 0px 32px 0px 5px;
+	padding: 0px 0px 0px 7px;
 	line-height: 30px;
 	font-size: 16px;
 	font-weight: 500;
@@ -179,38 +180,104 @@ input{
 		vertical-align: center;
 	}
 }
+.mobile-version {
+	display:none;
+}
 
 @media screen and (max-width: 768px) {
-	header {
-		background-color: @red-header-color;
-		opacity: 1;
-		margin:0px;
-		padding: 0px;
-	}
-	.top-header {
-		padding: 0px;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		.left-header {
-			margin:0px;
-			justify-content: space-between;
-			.logo{
-				flex: 1;
-				order:-1;
-			}
-			.url-icon-menu {
-				flex: 1;
-			}
+	body {
+		.desktop-version {
+			display:none;
 		}
-		.center-header {
-			input {
-				display:none;
+		.mobile-version	{
+			display: block;
+			header {
+				padding: 0px 5px 0px 10px;
+				box-sizing: border-box;
+				line-height: 30px;
+				background-color: @red-header-color-mobile;
+				position: absolute;
 			}
-			.img-keyboard {
-				display: none;
+			.first-line-header-mobile {
+				display:flex;
+				justify-content: space-between;
+				align-items: center;
+				min-height: 46px;
+				flex-wrap: nowrap;
+				.left-first-line-header-mobile {
+					display:flex;
+					.logo-mobile {
+						width: 36px;
+					  height: 26px;
+					  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
+					  -webkit-background-size: 48px 1380px;
+					  margin-right: 10px;
+					}
+					a {
+						text-decoration: none;
+						display:flex;
+						align-items: center;
+					}
+					.logo-name-mobile {
+						color: white;
+						font-size: 15px;
+						font-weight: 500;
+						padding: 0px;
+						margin: 0px;
+					}
+				}
+				.right-first-line-header-mobile {
+					display:flex;
+					.search-button-mobile {
+						background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
+					  width: 24px;
+					  height: 24px;
+					  -webkit-background-size: 48px 1380px;
+					  opacity: 0.9;
+					}
+					.menu-mobile {
+						width: 24px;
+						height: 24px;
+						background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
+						-webkit-background-size: 48px 1322px;
+						opacity: 0.9;
+					}
+				}
 			}
-			button {
-				order:-3;
+			.second-line-header-mobile {
+				display:flex;
+				justify-content: space-around;
+				align-items: center;
+				min-height: 56px;
+				.home-mobile {
+					opacity: 1;
+				  width: 24px;
+				  height: 24px;
+				  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
+				  background-size: 48px 1322px;
+				  -webkit-background-size: 48px 1322px;
+				}
+				.in-trend-mobile {
+					opacity: 0.5;
+					width: 24px;
+  				height: 24px;
+  				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
+  				-webkit-background-size: 48px 1322px;
+				}
+				.subscriptions-mobile {
+					opacity: 0.5;
+					width: 24px;
+  				height: 24px;
+  				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
+  				-webkit-background-size: 48px 1322px;
+				}
+				.account-mobile {
+					opacity: 0.5;
+					width: 24px;
+  				height: 24px;
+  				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
+  				-webkit-background-size: 48px 1322px;
+				}
 			}
 		}
 	}

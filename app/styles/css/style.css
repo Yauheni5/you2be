@@ -6,17 +6,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.icon-menu {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
-  width: 16px;
-  height: 24px;
-  opacity: 0.6;
-  margin-top: 4px;
-  margin-right: 14px;
-}
-.icon-menu:hover {
-  opacity: 1;
-}
 header {
   background-color: white;
   position: fixed;
@@ -27,12 +16,23 @@ header {
 header:hover .icon-menu {
   opacity: 1;
 }
+header .icon-menu {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
+  width: 16px;
+  height: 24px;
+  opacity: 0.6;
+  margin-top: 4px;
+  margin-right: 14px;
+}
+header .icon-menu:hover {
+  opacity: 1;
+}
 .top-header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  padding: 10px 0px 10px 28px;
+  justify-content: space-between;
+  padding: 10px 0px 10px 42px;
 }
 .top-header a {
   text-decoration: none;
@@ -46,7 +46,7 @@ header:hover .icon-menu {
 }
 .left-header {
   width: 4%;
-  margin-right: 151px;
+  margin-right: 134px;
 }
 .right-header {
   width: 20%;
@@ -72,13 +72,13 @@ header:hover .icon-menu {
   font-weight: 500;
 }
 .input-search {
-  width: 100%;
+  width: 90%;
 }
 input {
-  width: 76%;
-  max-width: 540px;
+  width: 100%;
+  max-width: 580px;
   height: 27px;
-  padding: 0px 32px 0px 5px;
+  padding: 0px 0px 0px 7px;
   line-height: 30px;
   font-size: 16px;
   font-weight: 500;
@@ -181,37 +181,103 @@ input:hover {
   text-align: center;
   vertical-align: center;
 }
+.mobile-version {
+  display: none;
+}
 @media screen and (max-width: 768px) {
-  header {
+  body .desktop-version {
+    display: none;
+  }
+  body .mobile-version {
+    display: block;
+  }
+  body .mobile-version header {
+    padding: 0px 5px 0px 10px;
+    box-sizing: border-box;
+    line-height: 30px;
     background-color: #e62117;
-    opacity: 1;
-    margin: 0px;
-    padding: 0px;
+    position: absolute;
   }
-  .top-header {
-    padding: 0px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .top-header .left-header {
-    margin: 0px;
+  body .mobile-version .first-line-header-mobile {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 46px;
+    flex-wrap: nowrap;
   }
-  .top-header .left-header .logo {
-    flex: 1;
-    order: -1;
+  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile {
+    display: flex;
   }
-  .top-header .left-header .url-icon-menu {
-    flex: 1;
+  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
+    width: 36px;
+    height: 26px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
+    -webkit-background-size: 48px 1380px;
+    margin-right: 10px;
   }
-  .top-header .center-header input {
-    display: none;
+  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
   }
-  .top-header .center-header .img-keyboard {
-    display: none;
+  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-name-mobile {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
   }
-  .top-header .center-header button {
-    order: -3;
+  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile {
+    display: flex;
+  }
+  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
+    width: 24px;
+    height: 24px;
+    -webkit-background-size: 48px 1380px;
+    opacity: 0.9;
+  }
+  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
+    width: 24px;
+    height: 24px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
+    -webkit-background-size: 48px 1322px;
+    opacity: 0.9;
+  }
+  body .mobile-version .second-line-header-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 56px;
+  }
+  body .mobile-version .second-line-header-mobile .home-mobile {
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
+    background-size: 48px 1322px;
+    -webkit-background-size: 48px 1322px;
+  }
+  body .mobile-version .second-line-header-mobile .in-trend-mobile {
+    opacity: 0.5;
+    width: 24px;
+    height: 24px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
+    -webkit-background-size: 48px 1322px;
+  }
+  body .mobile-version .second-line-header-mobile .subscriptions-mobile {
+    opacity: 0.5;
+    width: 24px;
+    height: 24px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
+    -webkit-background-size: 48px 1322px;
+  }
+  body .mobile-version .second-line-header-mobile .account-mobile {
+    opacity: 0.5;
+    width: 24px;
+    height: 24px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
+    -webkit-background-size: 48px 1322px;
   }
 }
 .content {
