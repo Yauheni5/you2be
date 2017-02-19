@@ -33,23 +33,17 @@ window.onload = function() {
 		openbox('divInputMobile');
 		return false;
 	}
-	function searchFunctionMobile() {
-		var inpSearchMobile = document.getElementById('searchMobileInput').value;
-		if (inpSearchMobile == '')  {
-			alert(empty);
-		}
-		else {
-			alert(inpSearchMobile);
-		}
 	}
 	function openbox() {
+		var inpSearchMobile = document.getElementById('searchMobileInput').value;
 		var divInputMobile = document.getElementById('divInputMobile');
+
 		if(divInputMobile.style.display == 'none') {
-			divInputMobile.style.display = 'block';
-			searchFunctionMobile();
+			divInputMobile.style.display = 'flex';
 		}
 		else {
 			divInputMobile.style.display = 'none';
 		}
 	}
-}
+
+
