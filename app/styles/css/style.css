@@ -184,6 +184,21 @@ input:hover {
 .mobile-version {
   display: none;
 }
+.content {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.left-content-column {
+  width: 70%;
+}
+.left-content-column .main-video video {
+  max-width: 700px;
+  height: 500px;
+}
+.right-content-column {
+  width: 30%;
+}
 @media screen and (max-width: 768px) {
   body .desktop-version {
     display: none;
@@ -207,6 +222,7 @@ input:hover {
   }
   body .mobile-version .first-line-header-mobile .left-first-line-header-mobile {
     display: flex;
+    max-width: 20%;
   }
   body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
     width: 36px;
@@ -231,6 +247,7 @@ input:hover {
     display: flex;
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
+    display: flex;
     background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
     width: 24px;
     height: 24px;
@@ -238,11 +255,19 @@ input:hover {
     opacity: 0.9;
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
+    display: flex;
     width: 24px;
     height: 24px;
     background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
     -webkit-background-size: 48px 1322px;
     opacity: 0.9;
+  }
+  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile {
+    display: none;
+  }
+  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile #searchMobileInput {
+    width: 100%;
+    max-width: 400px;
   }
   body .mobile-version .second-line-header-mobile {
     display: flex;
@@ -279,19 +304,4 @@ input:hover {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
     -webkit-background-size: 48px 1322px;
   }
-}
-.content {
-  display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.left-content-column {
-  width: 70%;
-}
-.left-content-column .main-video video {
-  max-width: 700px;
-  height: 500px;
-}
-.right-content-column {
-  width: 30%;
 }

@@ -22,6 +22,7 @@
 				flex-wrap: nowrap;
 				.left-first-line-header-mobile {
 					display:flex;
+					max-width: 20%;
 					.logo-mobile {
 						width: 36px;
 					  height: 26px;
@@ -45,6 +46,7 @@
 				.right-first-line-header-mobile {
 					display:flex;
 					.search-button-mobile {
+						display: flex;
 						background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
 					  width: 24px;
 					  height: 24px;
@@ -52,11 +54,19 @@
 					  opacity: 0.9;
 					}
 					.menu-mobile {
+						display: flex;
 						width: 24px;
 						height: 24px;
 						background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
 						-webkit-background-size: 48px 1322px;
 						opacity: 0.9;
+					}
+					#divInputMobile {
+						display: none;
+						#searchMobileInput {
+							width: 100%;
+							max-width: 400px;
+						}
 					}
 				}
 			}

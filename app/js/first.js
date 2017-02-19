@@ -1,9 +1,16 @@
+//Desktop version
+
 var hello = 'Мы рады видеть Вас!';
 var empty = 'Пожалуйста, введите значение для поиска';
+var hello_mobile = 'Это мобильная версия'
 
 window.onload = function() {
-	alert(hello);
-
+	if (window.matchMedia("screen and (max-width: 768px)").matches) {
+    alert(hello_mobile);
+  }
+  else {
+  	alert(hello);
+  }
 	function searchFunction() {
 		var inpSearch = document.getElementById('inputSearch').value;
 		if (inpSearch == '')  {
@@ -20,5 +27,29 @@ window.onload = function() {
 
 	document.getElementById('inputSearch').onkeypress = function (){
 		if (event.keyCode == 13) searchFunction();
+	}
+
+	document.getElementById('buttonSearchMobile').onclick = function () {
+		openbox('divInputMobile');
+		return false;
+	}
+	function searchFunctionMobile() {
+		var inpSearchMobile = document.getElementById('searchMobileInput').value;
+		if (inpSearchMobile == '')  {
+			alert(empty);
+		}
+		else {
+			alert(inpSearchMobile);
+		}
+	}
+	function openbox() {
+		var divInputMobile = document.getElementById('divInputMobile');
+		if(divInputMobile.style.display == 'none') {
+			divInputMobile.style.display = 'block';
+			searchFunctionMobile();
+		}
+		else {
+			divInputMobile.style.display = 'none';
+		}
 	}
 }
