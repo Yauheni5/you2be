@@ -209,7 +209,7 @@ input:hover {
   body .mobile-version header {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 5px 0px 10px;
+    padding: 0px 0px 0px 0px;
     box-sizing: border-box;
     line-height: 30px;
     background-color: #e62117;
@@ -220,13 +220,12 @@ input:hover {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    min-height: 46px;
-    line-height: 50px;
+    min-height: 50px;
     width: 100%;
+    padding: 0px 10px 0px 10px;
   }
   body .mobile-version .first-line-header-mobile .left-first-line-header-mobile {
     display: flex;
-    width: 10%;
   }
   body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
     display: flex;
@@ -252,7 +251,7 @@ input:hover {
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile {
     display: flex;
     justify-content: flex-end;
-    flex-grow: 3;
+    flex-grow: 1;
     max-width: 80%;
     height: 27px;
   }
@@ -272,13 +271,12 @@ input:hover {
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile {
     display: none;
-    width: 100%;
-    margin: 0px 5px;
+    width: 90%;
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile #searchMobileInput {
     display: flex;
     width: 100%;
-    max-width: 620px;
+    max-width: 700px;
   }
   body .mobile-version .second-line-header-mobile {
     display: flex;

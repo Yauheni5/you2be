@@ -28,6 +28,7 @@ window.onload = function() {
 		if (event.keyCode == 13) searchFunction();
 	}
 	var divInputMobile = document.getElementById('divInputMobile');
+	var secondOpacityHeader = document.getElementById('secondLineHeaderMobile');
 	function openbox() {
 		if (divInputMobile.style.display == 'none') {
 			divInputMobile.style.display = 'flex';
@@ -50,14 +51,27 @@ window.onload = function() {
 			return openbox();
 		}
 	}
+	function hideNameLogoAndMenu() {
+		if (divInputMobile.style.display == 'flex') {
+			logoNameMobile.style.display = 'none';
+			menuMobile.style.display = 'none';
+			secondOpacityHeader.style.background = 'rgba(0,0,0,0.65)';
+		}
+		else	{
+		}
+	}
 	document.getElementById('buttonSearchMobile').onclick = function () {
 		openbox();
 	}
 	document.getElementById('buttonSearchMobile').onclick = function () {
 		searchFunctionMobile();
+		hideNameLogoAndMenu();
 	}
 	document.getElementById('secondLineHeaderMobile').onclick = function () {
 		divInputMobile.style.display = 'none';
+		logoNameMobile.style.display = 'flex';
+		menuMobile.style.display = 'flex';
+		secondOpacityHeader.style.background = '#e62117';
 	}
 	document.getElementById('searchMobileInput').onkeypress = function (){
 		if (event.keyCode == 13) searchFunctionMobile();
