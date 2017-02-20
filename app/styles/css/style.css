@@ -272,10 +272,15 @@ input:hover {
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile {
     display: none;
     width: 100%;
+    padding: 0px;
+    margin: 0px;
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile #searchMobileInput {
+    max-width: 100%;
     display: flex;
-    width: 100%;
+    outline: none;
+    vertical-align: center;
+    margin-right: 5px;
   }
   body .mobile-version .second-line-header-mobile {
     display: flex;
