@@ -207,6 +207,8 @@ input:hover {
     display: block;
   }
   body .mobile-version header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0px 5px 0px 10px;
     box-sizing: border-box;
     line-height: 30px;
@@ -215,14 +217,17 @@ input:hover {
   }
   body .mobile-version .first-line-header-mobile {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     min-height: 46px;
-    flex-wrap: nowrap;
+    line-height: 50px;
+    width: 100%;
   }
   body .mobile-version .first-line-header-mobile .left-first-line-header-mobile {
     display: flex;
-    max-width: 20%;
+    flex-grow: 2;
+    max-width: 15%;
   }
   body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
     width: 36px;
@@ -245,9 +250,12 @@ input:hover {
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile {
     display: flex;
+    justify-content: flex-end;
+    flex-grow: 4;
+    max-widtn: 80%;
+    height: 27px;
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
-    display: flex;
     background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
     width: 24px;
     height: 24px;
@@ -255,7 +263,6 @@ input:hover {
     opacity: 0.9;
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
-    display: flex;
     width: 24px;
     height: 24px;
     background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
@@ -264,16 +271,19 @@ input:hover {
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile {
     display: none;
+    width: 100%;
+    margin-right: 5px;
   }
   body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile #searchMobileInput {
     width: 100%;
-    max-width: 400px;
+    max-width: 590px;
   }
   body .mobile-version .second-line-header-mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 56px;
+    width: 100%;
   }
   body .mobile-version .second-line-header-mobile .home-mobile {
     opacity: 1;

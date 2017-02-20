@@ -20,7 +20,6 @@ window.onload = function() {
 	  	alert(inpSearch);
 		}
 	}
-
 	document.getElementById('buttonSearch').onclick = function () {
 		searchFunction();
 	}
@@ -28,22 +27,42 @@ window.onload = function() {
 	document.getElementById('inputSearch').onkeypress = function (){
 		if (event.keyCode == 13) searchFunction();
 	}
-
-	document.getElementById('buttonSearchMobile').onclick = function () {
-		openbox('divInputMobile');
-		return false;
-	}
-	}
+	var divInputMobile = document.getElementById('divInputMobile');
 	function openbox() {
-		var inpSearchMobile = document.getElementById('searchMobileInput').value;
-		var divInputMobile = document.getElementById('divInputMobile');
-
-		if(divInputMobile.style.display == 'none') {
+		if (divInputMobile.style.display == 'none') {
 			divInputMobile.style.display = 'flex';
 		}
-		else {
-			divInputMobile.style.display = 'none';
+		else	{
+			divInputMobile.style.display = 'flex';
 		}
 	}
+	function searchFunctionMobile() {
+		if (divInputMobile.style.display == 'flex') {
+			var inpSearchMobile = document.getElementById('searchMobileInput').value;
+			if (inpSearchMobile == '')  {
+				alert(empty);
+			}
+			else {
+	  		alert(inpSearchMobile);
+			}
+		}
+		else {
+			return openbox();
+		}
+	}
+	document.getElementById('buttonSearchMobile').onclick = function () {
+		openbox();
+	}
+	document.getElementById('buttonSearchMobile').onclick = function () {
+		searchFunctionMobile();
+	}
+	document.getElementById('secondLineHeaderMobile').onclick = function () {
+		divInputMobile.style.display = 'none';
+	}
+	document.getElementById('searchMobileInput').onkeypress = function (){
+		if (event.keyCode == 13) searchFunctionMobile();
+	}
+}
+
 
 
