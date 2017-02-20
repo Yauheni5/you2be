@@ -43,7 +43,7 @@ window.onload = function() {
 				alert(empty);
 			}
 			else {
-	  		alert(inpSearchMobile);
+	  		alert(inpSearchMobile.split(' ').reverse().join(' '));
 			}
 		}
 		else {
@@ -63,6 +63,3 @@ window.onload = function() {
 		if (event.keyCode == 13) searchFunctionMobile();
 	}
 }
-
-
-
