@@ -269,13 +269,12 @@ input:hover {
     -webkit-background-size: 48px 1322px;
     opacity: 0.9;
   }
-  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile {
-    display: none;
+  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile {
     width: 100%;
     padding: 0px;
     margin: 0px;
   }
-  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile #divInputMobile #searchMobileInput {
+  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile .search-mobile-input {
     max-width: 100%;
     display: flex;
     outline: none;
@@ -318,4 +317,16 @@ input:hover {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
     -webkit-background-size: 48px 1322px;
   }
+}
+.disp-flex {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+.full-width {
+  width: 100%;
+}
+.background-opacity {
+  background: rgba(0, 0, 0, 0.65);
 }
