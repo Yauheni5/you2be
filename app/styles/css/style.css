@@ -181,8 +181,131 @@ input:hover {
   text-align: center;
   vertical-align: center;
 }
-.mobile-version {
+body .mobile-version {
+  display: block;
+}
+body .mobile-version header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+  line-height: 30px;
+  background-color: #e62117;
+  position: absolute;
+}
+body .mobile-version .first-line-header-mobile {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+}
+body .mobile-version .first-line-header-mobile .left-first-line-header-mobile {
+  display: flex;
+}
+body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
+  display: flex;
+  width: 36px;
+  height: 26px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
+  -webkit-background-size: 48px 1380px;
+  margin-right: 10px;
+}
+body .mobile-version .first-line-header-mobile .left-first-line-header-mobile a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-name-mobile {
+  display: flex;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px;
+  margin-right: 5px;
+}
+body .mobile-version .first-line-header-mobile .right-first-line-header-mobile {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 2;
+  max-width: 100%;
+  height: 27px;
+}
+body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
+  width: 24px;
+  height: 24px;
+  -webkit-background-size: 48px 1380px;
+  opacity: 0.9;
+}
+body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
+  -webkit-background-size: 48px 1322px;
+  opacity: 0.9;
+}
+body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile .search-mobile-input {
+  max-width: 100%;
+  display: flex;
+  outline: none;
+  vertical-align: center;
+  margin-right: 5px;
+}
+body .mobile-version .second-line-header-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 56px;
+  width: 100%;
+}
+body .mobile-version .second-line-header-mobile .home-mobile {
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
+  background-size: 48px 1322px;
+  -webkit-background-size: 48px 1322px;
+}
+body .mobile-version .second-line-header-mobile .in-trend-mobile {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
+  -webkit-background-size: 48px 1322px;
+}
+body .mobile-version .second-line-header-mobile .subscriptions-mobile {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
+  -webkit-background-size: 48px 1322px;
+}
+body .mobile-version .second-line-header-mobile .account-mobile {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
+  -webkit-background-size: 48px 1322px;
+}
+.disp-flex {
+  display: flex;
+}
+.hide {
   display: none;
+}
+.full-width {
+  width: 100%;
+}
+.background-opacity {
+  background: rgba(0, 0, 0, 0.65);
 }
 .content {
   display: flex;
@@ -198,135 +321,4 @@ input:hover {
 }
 .right-content-column {
   width: 30%;
-}
-@media screen and (max-width: 768px) {
-  body .desktop-version {
-    display: none;
-  }
-  body .mobile-version {
-    display: block;
-  }
-  body .mobile-version header {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 0px 0px 0px;
-    box-sizing: border-box;
-    line-height: 30px;
-    background-color: #e62117;
-    position: absolute;
-  }
-  body .mobile-version .first-line-header-mobile {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 50px;
-    width: 100%;
-    padding: 0px 10px 0px 10px;
-  }
-  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile {
-    display: flex;
-  }
-  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
-    display: flex;
-    width: 36px;
-    height: 26px;
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
-    -webkit-background-size: 48px 1380px;
-    margin-right: 10px;
-  }
-  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
-  body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-name-mobile {
-    display: flex;
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 0px;
-    margin-right: 5px;
-  }
-  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 2;
-    max-width: 100%;
-    height: 27px;
-  }
-  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
-    width: 24px;
-    height: 24px;
-    -webkit-background-size: 48px 1380px;
-    opacity: 0.9;
-  }
-  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
-    width: 24px;
-    height: 24px;
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
-    -webkit-background-size: 48px 1322px;
-    opacity: 0.9;
-  }
-  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-  }
-  body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile .search-mobile-input {
-    max-width: 100%;
-    display: flex;
-    outline: none;
-    vertical-align: center;
-    margin-right: 5px;
-  }
-  body .mobile-version .second-line-header-mobile {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 56px;
-    width: 100%;
-  }
-  body .mobile-version .second-line-header-mobile .home-mobile {
-    opacity: 1;
-    width: 24px;
-    height: 24px;
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
-    background-size: 48px 1322px;
-    -webkit-background-size: 48px 1322px;
-  }
-  body .mobile-version .second-line-header-mobile .in-trend-mobile {
-    opacity: 0.5;
-    width: 24px;
-    height: 24px;
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
-    -webkit-background-size: 48px 1322px;
-  }
-  body .mobile-version .second-line-header-mobile .subscriptions-mobile {
-    opacity: 0.5;
-    width: 24px;
-    height: 24px;
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
-    -webkit-background-size: 48px 1322px;
-  }
-  body .mobile-version .second-line-header-mobile .account-mobile {
-    opacity: 0.5;
-    width: 24px;
-    height: 24px;
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
-    -webkit-background-size: 48px 1322px;
-  }
-}
-.disp-flex {
-  display: flex;
-}
-.hide {
-  display: none;
-}
-.full-width {
-  width: 100%;
-}
-.background-opacity {
-  background: rgba(0, 0, 0, 0.65);
 }

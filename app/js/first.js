@@ -1,15 +1,24 @@
+var minWidthDesktop = 769;
+function widthScreen() {
+		var screenWidthVar = window.outerWidth;
+		if (screenWidthVar > minWidthDesktop) {
+			mobileVersion.classList.add('hide');
+			mobileVersion.classList.remove('mobile-version');
+			desktopVersion.classList.remove('hide');
+			desktopVersion.classList.add('desktop-version');
+		}
+		else {
+			desktopVersion.classList.add('hide');
+			mobileVersion.classList.add('mobile-version');
+			mobileVersion.classList.remove('hide');
+		}
+	}
+widthScreen();
+
 window.onload = function() {
 	var hello = 'Мы рады видеть Вас!';
 	var empty = 'Пожалуйста, введите значение для поиска';
 	var helloMobile = 'Это мобильная версия';
-	var widthScreenMax768 = window.matchMedia("screen and (max-width: 768px)").matches;
-
-	if (widthScreenMax768) {
-    alert(helloMobile);
-  }
-	else {
-		alert(hello);
-	}
 
 	//ФУНКЦИИ и переменные для Десктоп
 	function searchFunction() {
@@ -34,9 +43,9 @@ window.onload = function() {
   }
   function openbox() {
   	if (divInputMobileVar.classList.contains('hide')) {
+	    logoNameMobile.classList.remove('logo-name-mobile');
 	    divInputMobileVar.classList.remove('hide');
 	    divInputMobileVar.classList.add('disp-flex');
-	    logoNameMobile.classList.remove('logo-name-mobile');
 	    logoNameMobile.classList.add('hide');
 			menuMobile.classList.add('hide');
 			secondLineHeaderMobile.classList.add('background-opacity');
@@ -54,18 +63,28 @@ window.onload = function() {
 		secondLineHeaderMobile.classList.remove('background-opacity');
 	}
 	//События
+
 	document.getElementById('buttonSearch').onclick = function() {
 		searchFunction();}
+
 	document.getElementById('inputSearch').onkeypress = function (){
-	  if (event.keyCode == 13) searchFunction();}
+	  if (event.keyCode == 13) searchFunction();
+	}
+
   document.getElementById('buttonSearchMobile').onclick = function () {
     openbox();
-    console.log(this);
   }
+
 	document.getElementById('secondLineHeaderMobile').onclick = function() {
 		closeBox();
-		console.log(this);
 	}
+
 	document.getElementById('searchMobileInput').onkeypress = function (){
-		if (event.keyCode == 13) searchFunctionMobile();}
+		if (event.keyCode == 13) searchFunctionMobile();
+	}
+
+	window.addEventListener("resize", function() {
+		widthScreen();
+		return;
+	}, false);
 }
