@@ -85,6 +85,5 @@ window.onload = function() {
 
 	window.addEventListener("resize", function() {
 		widthScreen();
-		return;
 	}, false);
 }
