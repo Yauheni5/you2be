@@ -1,24 +1,33 @@
 var minWidthDesktop = 769;
+function desktop(){
+	mobileVersion.classList.add('hide');
+	mobileVersion.classList.remove('mobile-version');
+	desktopVersion.classList.remove('hide');
+	desktopVersion.classList.add('desktop-version');
+}
+function mobile() {
+	desktopVersion.classList.add('hide');
+	mobileVersion.classList.add('mobile-version');
+	mobileVersion.classList.remove('hide');
+}
 function widthScreen() {
-		var screenWidthVar = window.outerWidth;
-		if (screenWidthVar > minWidthDesktop) {
-			mobileVersion.classList.add('hide');
-			mobileVersion.classList.remove('mobile-version');
-			desktopVersion.classList.remove('hide');
-			desktopVersion.classList.add('desktop-version');
-		}
-		else {
-			desktopVersion.classList.add('hide');
-			mobileVersion.classList.add('mobile-version');
-			mobileVersion.classList.remove('hide');
-		}
+	var screenWidthVar = window.outerWidth;
+	if (screenWidthVar > minWidthDesktop) {
+ 		desktop();
 	}
+	else {
+		mobile();
+	}
+}
+
+
 widthScreen();
 
 window.onload = function() {
 	var hello = 'Мы рады видеть Вас!';
 	var empty = 'Пожалуйста, введите значение для поиска';
 	var helloMobile = 'Это мобильная версия';
+	var divVar = document.getElementsByTagName('div');
 
 	//ФУНКЦИИ и переменные для Десктоп
 	function searchFunction() {
