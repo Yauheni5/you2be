@@ -1,6 +1,12 @@
 var minWidthDesktop = 769;
+var divInputMobileVar = document.getElementById('divInputMobile');
+var hello = 'Мы рады видеть Вас!';
+var empty = 'Пожалуйста, введите значение для поиска';
+var helloMobile = 'Это мобильная версия';
+var divVar = document.getElementsByTagName('div');
 //Общие функции и переменные
 //*********************************************************************************
+widthScreen();
 function desktop(){
 	mobileVersion.classList.add('hide');
 	mobileVersion.classList.remove('mobile-version');
@@ -14,43 +20,26 @@ function mobile() {
 }
 function widthScreen() {
 	var screenWidthVar = window.outerWidth;
-	if (screenWidthVar > minWidthDesktop) {
- 		desktop();
-	}
-	else {
-		mobile();
-	}
-}
 
-widthScreen();
-	var hello = 'Мы рады видеть Вас!';
-	var empty = 'Пожалуйста, введите значение для поиска';
-	var helloMobile = 'Это мобильная версия';
-	var divVar = document.getElementsByTagName('div');
+	if (screenWidthVar > minWidthDesktop) desktop();
+	else mobile();
+}
 
 //ФУНКЦИИ и переменные для Десктоп
 function searchFunction() {
 	var inpSearch = document.getElementById('inputSearch').value;
-	if (inpSearch == '')  {
-		alert(empty);
-	}
-	else {
-	  alert(inpSearch);
-	}
+
+	if (inpSearch == '') alert(empty);
+	else alert(inpSearch);
 }
 
 //ФУНКЦИИ и переменные для Мобильных устройств
 //*********************************************************************************
-var divInputMobileVar = document.getElementById('divInputMobile');
-
 function searchFunctionMobile() {
   var inpSearchMobile = document.getElementById('searchMobileInput').value;
-	if (inpSearchMobile == '')  {
-		alert(empty);
-	}
-	else {
-  	alert(inpSearchMobile.split(' ').reverse().join(' '));
-	}
+
+	if (inpSearchMobile == '') alert(empty);
+	else alert(inpSearchMobile.split(' ').reverse().join(' '));
 }
 
 function openbox() {
@@ -61,10 +50,7 @@ function openbox() {
 		logoNameMobile.classList.add('hide');
 		menuMobile.classList.add('hide');
 		secondLineHeaderMobile.classList.add('background-opacity');
-  }
-  else {
-  	searchFunctionMobile();
-	}
+  } else searchFunctionMobile();
 }
 
 function closeBox() {
