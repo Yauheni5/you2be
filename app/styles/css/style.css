@@ -295,6 +295,9 @@ body .mobile-version .second-line-header-mobile .account-mobile {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
   -webkit-background-size: 48px 1322px;
 }
+.background-opacity {
+  background: rgba(0, 0, 0, 0.65);
+}
 .disp-flex {
   display: flex;
 }
@@ -303,9 +306,6 @@ body .mobile-version .second-line-header-mobile .account-mobile {
 }
 .full-width {
   width: 100%;
-}
-.background-opacity {
-  background: rgba(0, 0, 0, 0.65);
 }
 .content {
   display: flex;
