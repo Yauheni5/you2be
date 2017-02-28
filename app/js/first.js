@@ -1,12 +1,11 @@
 var minWidthDesktop = 769;
-var divInputMobileVar = document.getElementById('divInputMobile');
 var hello = 'Мы рады видеть Вас!';
 var empty = 'Пожалуйста, введите значение для поиска';
 var helloMobile = 'Это мобильная версия';
 var divVar = document.getElementsByTagName('div');
-//Общие функции и переменные
-//*********************************************************************************
+var divInputMobileVar = document.getElementById('divInputMobile');
 widthScreen();
+
 function desktop(){
 	mobileVersion.classList.add('hide');
 	mobileVersion.classList.remove('mobile-version');
@@ -62,9 +61,11 @@ function closeBox() {
 	secondLineHeaderMobile.classList.remove('background-opacity');
 }
 
-//События
-//*********************************************************************************
+
 window.onload = function() {
+	//Общие функции и переменные
+//*********************************************************************************
+
 	widthScreen();
 	//Поиск при клике на кнопку поиск(лупа)	десктопная версия
 	//*********************************************************************************

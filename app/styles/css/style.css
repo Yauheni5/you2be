@@ -298,15 +298,6 @@ body .mobile-version .second-line-header-mobile .account-mobile {
 .background-opacity {
   background: rgba(0, 0, 0, 0.65);
 }
-.disp-flex {
-  display: flex;
-}
-.hide {
-  display: none;
-}
-.full-width {
-  width: 100%;
-}
 .content {
   display: flex;
   max-width: 1000px;
@@ -321,4 +312,13 @@ body .mobile-version .second-line-header-mobile .account-mobile {
 }
 .right-content-column {
   width: 30%;
+}
+.disp-flex {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+.full-width {
+  width: 100%;
 }
