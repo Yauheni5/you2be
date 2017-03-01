@@ -8,76 +8,85 @@
 	<link rel="stylesheet" href="app/styles/css/style.css">
 </head>
 	<body>
-	 	<div class="desktop-version" id="desktopVersion">
-			<header>
-				<div class="top-header">
-						<div class="left-header">
-							<a href="#" class="url-icon-menu">
-								<div class="icon-menu"></div>
-							</a>
-							<div class="logo">
-								<a href="#">
-									<div class="icon-logo"></div>
-									<div><sup class="region">BY</sup></div>
+		<div class="header">
+		 	<div class="desktop-version" id="desktopVersion">
+				<header>
+					<div class="top-header">
+							<div class="left-header">
+								<a href="#" class="url-icon-menu">
+									<div class="icon-menu"></div>
 								</a>
+								<div class="logo">
+									<a href="#">
+										<div class="icon-logo"></div>
+										<div><sup class="region">BY</sup></div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="input-search center-header">
-								<input name="search" placeholder="Введите запрос" id="inputSearch">
-							<div class="keyboard-box">
-								<img src="app/images/keyboard.gif" class="img-keyboard">
-								<button class="icon-button-search" id="buttonSearch">
-									<span class="icon-button-search-span">поиск</span>
-								</button>
+							<div class="input-search center-header">
+									<input name="search" placeholder="Введите запрос" id="inputSearch">
+								<div class="keyboard-box">
+									<img src="app/images/keyboard.gif" class="img-keyboard">
+									<button class="icon-button-search" id="buttonSearch">
+										<span class="icon-button-search-span">поиск</span>
+									</button>
+								</div>
 							</div>
-						</div>
-						<div class="right-header">
-							<div class="add-video">
-								<a href="#"></a>
+							<div class="right-header">
+								<div class="add-video">
+									<a href="#"></a>
+								</div>
+								<div class="g-account">
+									<a href="#" class="message"></a>
+									<a href="#" class="account"><div class="google-account">A</div></a>
+								</div>
 							</div>
-							<div class="g-account">
-								<a href="#" class="message"></a>
-								<a href="#" class="account"><div class="google-account">A</div></a>
-							</div>
-						</div>
-				</div>
-			</header>
-			<div class="content">
-				<div class="left-content-column">
-					<!--<div class="main-video">
-						<video controls="" src="/app/video/video1.mov">
-						</video>
-					</div>-->
-				</div>
-				<div class="rigth-content-column">
+					</div>
+				</header>
+				<div class="content">
+					<div class="left-content-column">
+						<!--<div class="main-video">
+							<video controls="" src="/app/video/video1.mov">
+							</video>
+						</div>-->
+					</div>
+					<div class="rigth-content-column">
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- MOBILE DEVICE Version-->
-		<div class="mobile-version" id="mobileVersion">
-			<header>
-				<div class="first-line-header-mobile" id="firstLineHeaderMobile">
-					<div class="left-first-line-header-mobile">
-						<a href="#">
-							<div class="logo-mobile"></div>
-							<h1 class="logo-name-mobile" id="logoNameMobile">Главная</h1>
-						</a>
-					</div>
-					<div class="right-first-line-header-mobile">
-						<div class="div-input-mobile hide" id="divInputMobile">
-							<input class="search-mobile-input" placeholder="Введите запрос" name="SearchMobile" id="searchMobileInput">
+			<!-- MOBILE DEVICE Version-->
+			<div class="mobile-version" id="mobileVersion">
+				<header>
+					<div class="first-line-header-mobile" id="firstLineHeaderMobile">
+						<div class="left-first-line-header-mobile">
+							<a href="#">
+								<div class="logo-mobile"></div>
+								<h1 class="logo-name-mobile" id="logoNameMobile">Главная</h1>
+							</a>
 						</div>
-						<div class ="search-button-mobile" id="buttonSearchMobile"></div>
-						<div class="menu-mobile" id="menuMobile"></div>
+						<div class="right-first-line-header-mobile">
+							<div class="div-input-mobile hide" id="divInputMobile">
+								<input class="search-mobile-input" placeholder="Введите запрос" name="SearchMobile" id="searchMobileInput">
+							</div>
+							<div class ="search-button-mobile" id="buttonSearchMobile"></div>
+							<div class="menu-mobile" id="menuMobile"></div>
+						</div>
 					</div>
-				</div>
-				<div class="second-line-header-mobile" id="secondLineHeaderMobile">
-					<div class="home-mobile"></div>
-					<div class="in-trend-mobile"></div>
-					<div class="subscriptions-mobile"></div>
-					<div class="account-mobile"></div>
-				</div>
-			</header>
+					<div class="second-line-header-mobile" id="secondLineHeaderMobile">
+						<div class="home-mobile"></div>
+						<div class="in-trend-mobile"></div>
+						<div class="subscriptions-mobile"></div>
+						<div class="account-mobile"></div>
+					</div>
+				</header>
+			</div>
+			<div class="menu-bottom-header responsive">
+				<ul class="list-menu-bottom-header">
+					<li class="main-toogle"><a  href=#>Главная</a></li>
+					<li class="recomendation-toogle"><a  href=#>В тренде</a></li>
+					<li class="subscriptions-toogle"><a  href=#>Подписки</a></li>
+				</ul>
+			</div>
 		</div>
 		<script src="app/js/first.js"></script>
 	</body>

@@ -4,24 +4,32 @@ var empty = 'Пожалуйста, введите значение для пои
 var helloMobile = 'Это мобильная версия';
 var divVar = document.getElementsByTagName('div');
 var divInputMobileVar = document.getElementById('divInputMobile');
-widthScreen();
 
 function desktop(){
 	mobileVersion.classList.add('hide');
 	mobileVersion.classList.remove('mobile-version');
 	desktopVersion.classList.remove('hide');
 	desktopVersion.classList.add('desktop-version');
+
 }
 function mobile() {
 	desktopVersion.classList.add('hide');
 	mobileVersion.classList.add('mobile-version');
 	mobileVersion.classList.remove('hide');
 }
+widthScreen();
 function widthScreen() {
 	var screenWidthVar = window.outerWidth;
-
-	if (screenWidthVar > minWidthDesktop) desktop();
-	else mobile();
+	if (screenWidthVar > minWidthDesktop) {
+		desktop();
+		document.getElementsByClassName("responsive")[0].classList.add('desktop');
+		document.getElementsByClassName("responsive")[0].classList.remove('mobile');
+	}
+	else {
+		mobile();
+		document.getElementsByClassName("responsive")[0].classList.add('mobile');
+		document.getElementsByClassName("responsive")[0].classList.remove('desktop');
+	}
 }
 
 //ФУНКЦИИ и переменные для Десктоп
@@ -60,13 +68,11 @@ function closeBox() {
 	menuMobile.classList.remove('hide');
 	secondLineHeaderMobile.classList.remove('background-opacity');
 }
-
+window.addEventListener("resize",	widthScreen);
 
 window.onload = function() {
 	//Общие функции и переменные
 //*********************************************************************************
-
-	widthScreen();
 	//Поиск при клике на кнопку поиск(лупа)	десктопная версия
 	//*********************************************************************************
 	document.getElementById('buttonSearch').onclick = function() {
@@ -93,7 +99,4 @@ window.onload = function() {
 	}
 	//Отслеживание изменения размера окна браузера и если это необходимо меняет Mobile-version на Desktop и наоборот
 	//*********************************************************************************
-	window.addEventListener("resize", function() {
-		widthScreen();
-	}, false);
 }

@@ -1,10 +1,10 @@
 body {
-  font-family: Roboto, arial, sans-serif;
-  font-size: 13px;
-  background-color: #f1f1f1;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, arial, sans-serif;
+  font-size: 13px;
+  background-color: #f1f1f1;
 }
 header {
   background-color: white;
@@ -181,10 +181,10 @@ input:hover {
   text-align: center;
   vertical-align: center;
 }
-body .mobile-version {
+.mobile-version {
   display: block;
 }
-body .mobile-version header {
+.mobile-version header {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 0px 0px 0px;
@@ -193,7 +193,7 @@ body .mobile-version header {
   background-color: #e62117;
   position: absolute;
 }
-body .mobile-version .first-line-header-mobile {
+.mobile-version .first-line-header-mobile {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -202,10 +202,10 @@ body .mobile-version .first-line-header-mobile {
   width: 100%;
   padding: 0px 10px 0px 10px;
 }
-body .mobile-version .first-line-header-mobile .left-first-line-header-mobile {
+.mobile-version .first-line-header-mobile .left-first-line-header-mobile {
   display: flex;
 }
-body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
+.mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
   display: flex;
   width: 36px;
   height: 26px;
@@ -213,12 +213,12 @@ body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .l
   -webkit-background-size: 48px 1380px;
   margin-right: 10px;
 }
-body .mobile-version .first-line-header-mobile .left-first-line-header-mobile a {
+.mobile-version .first-line-header-mobile .left-first-line-header-mobile a {
   text-decoration: none;
   display: flex;
   align-items: center;
 }
-body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-name-mobile {
+.mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-name-mobile {
   display: flex;
   color: white;
   font-size: 15px;
@@ -226,47 +226,47 @@ body .mobile-version .first-line-header-mobile .left-first-line-header-mobile .l
   padding: 0px;
   margin-right: 5px;
 }
-body .mobile-version .first-line-header-mobile .right-first-line-header-mobile {
+.mobile-version .first-line-header-mobile .right-first-line-header-mobile {
   display: flex;
   justify-content: flex-end;
   flex-grow: 2;
   max-width: 100%;
   height: 27px;
 }
-body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
+.mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
   width: 24px;
   height: 24px;
   -webkit-background-size: 48px 1380px;
   opacity: 0.9;
 }
-body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
+.mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
   width: 24px;
   height: 24px;
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
   -webkit-background-size: 48px 1322px;
   opacity: 0.9;
 }
-body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile {
+.mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile {
   width: 100%;
   padding: 0px;
   margin: 0px;
 }
-body .mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile .search-mobile-input {
+.mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile .search-mobile-input {
   max-width: 100%;
   display: flex;
   outline: none;
   vertical-align: center;
   margin-right: 5px;
 }
-body .mobile-version .second-line-header-mobile {
+.mobile-version .second-line-header-mobile {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 56px;
   width: 100%;
 }
-body .mobile-version .second-line-header-mobile .home-mobile {
+.mobile-version .second-line-header-mobile .home-mobile {
   opacity: 1;
   width: 24px;
   height: 24px;
@@ -274,21 +274,21 @@ body .mobile-version .second-line-header-mobile .home-mobile {
   background-size: 48px 1322px;
   -webkit-background-size: 48px 1322px;
 }
-body .mobile-version .second-line-header-mobile .in-trend-mobile {
+.mobile-version .second-line-header-mobile .in-trend-mobile {
   opacity: 0.5;
   width: 24px;
   height: 24px;
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
   -webkit-background-size: 48px 1322px;
 }
-body .mobile-version .second-line-header-mobile .subscriptions-mobile {
+.mobile-version .second-line-header-mobile .subscriptions-mobile {
   opacity: 0.5;
   width: 24px;
   height: 24px;
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
   -webkit-background-size: 48px 1322px;
 }
-body .mobile-version .second-line-header-mobile .account-mobile {
+.mobile-version .second-line-header-mobile .account-mobile {
   opacity: 0.5;
   width: 24px;
   height: 24px;
@@ -321,4 +321,47 @@ body .mobile-version .second-line-header-mobile .account-mobile {
 }
 .full-width {
   width: 100%;
+}
+.responsive {
+  position: absolute;
+  width: 100%;
+}
+.responsive .list-menu-bottom-header {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0px;
+}
+.responsive .list-menu-bottom-header li {
+  margin: 0px 15px;
+}
+.responsive .list-menu-bottom-header li a {
+  text-decoration: none;
+  font-size: 13px;
+}
+.responsive .list-menu-bottom-header li a:active {
+  font-weight: bold;
+  font-size: 12px;
+}
+.responsive.desktop {
+  top: 51px;
+  background-color: white;
+}
+.responsive.desktop a {
+  color: #666;
+}
+.responsive.desktop a:active {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #cc181e;
+}
+.responsive.mobile {
+  top: 105px;
+  background-color: #e62117;
+}
+.responsive.mobile a {
+  color: #73100b;
+}
+.responsive.mobile a:active {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #73100b;
 }

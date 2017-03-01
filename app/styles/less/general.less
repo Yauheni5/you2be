@@ -7,3 +7,46 @@
 .full-width {
 	width: 100%;
 }
+.responsive {
+	position: absolute;
+	width: 100%;
+	.list-menu-bottom-header {
+		display: flex;
+		list-style: none;
+		justify-content:center;
+		padding: 0px;
+		li {
+			margin: 0px 15px;
+			a {
+				text-decoration: none;
+				font-size: 13px;
+				&:active {
+					font-weight: bold;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	&.desktop {
+		top: 51px;
+		background-color: white;
+		a {
+			color: #666;
+			&:active{
+				padding-bottom: 10px;
+				border-bottom: 3px solid #cc181e;
+			}
+		}
+	}
+	&.mobile {
+		top:105px;
+		background-color: @red-header-color-mobile;
+		a {
+			color: #73100b;
+			&:active{
+				padding-bottom: 10px;
+				border-bottom: 3px solid #73100b;
+			}
+		}
+	}
+}
