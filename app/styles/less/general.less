@@ -7,45 +7,298 @@
 .full-width {
 	width: 100%;
 }
-.responsive {
-	position: absolute;
-	width: 100%;
-	.list-menu-bottom-header {
-		display: flex;
-		list-style: none;
-		justify-content:center;
-		padding: 0px;
-		li {
-			margin: 0px 15px;
+body {
+	margin: 0px;
+	padding: 0px;
+	&.responsive {
+		position: absolute;
+		width: 100%;
+		&.desktop {
+			box-sizing: border-box;
+			font-family: Roboto,arial,sans-serif;
+			font-size: 13px;
+			background-color: @bg-body-color;
+			header {
+				background-color: white;
+				position: fixed;
+				width: 100%;
+				margin:0px;
+				border-bottom: 1px solid @border-header;
+				&:hover {
+					.icon-menu {
+						opacity: 1;
+					}
+				}
+				.icon-menu {
+					background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
+					width: 16px;
+					height: 24px;
+					opacity:0.6;
+					margin-top: 4px;
+					margin-right: 14px;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+			.top-header	{
+				display: flex;
+				flex-direction: row;
+				flex-wrap:nowrap;
+				justify-content: space-between;
+				padding: 10px 0px 10px 42px;
+				a {
+					text-decoration: none;
+				}
+				div, sup, a, input, img {
+					display: flex;
+				}
+			}
+			.left-header {
+				width: 4%;
+				margin-right: 134px;
+			}
+			.right-header {
+				width: 20%;
+				padding-left: 90px;
+			}
+			.icon-menu {
+				background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflm-serG.webp) -392px -337px;
+				background-size: auto;
+				width: 16px;
+				height: 16px;
+				margin-top: 7px;
+				margin-right: 14px;
+				color: #333;
+			}
+
+			.icon-logo {
+				background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -425px -391px;
+				width: 73px;
+				height: 30px;
+			}
+			.region {
+				color: #767676;
+				font-size: 10px;
+				font-weight: 500;
+			}
+			.input-search {
+				width: 90%;
+			}
+			input{
+				width: 100%;
+				max-width: 580px;
+				height: 27px;
+				padding: 0px 0px 0px 7px;
+				line-height: 30px;
+				font-size: 16px;
+				font-weight: 500;
+				outline: none;
+				border: 1px solid #ccc;
+				box-shadow: inset 0 1px 2px #eee;
+				&:hover  {
+					border:1px solid #b9b9b9;
+					border-top-color: #a0a0a0;
+					box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+				}
+			}
+			.icon-button-search-span {
+				border: none;
+				display: block;
+				opacity: .6;
+				padding: 0;
+				text-indent: -10000px;
+				background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflm-serG.webp) -320px -331px;
+				background-size: auto;
+				width: 15px;
+				height: 15px;
+				box-shadow: none;
+				margin: 0 18px;
+			}
+			.icon-button-search {
+				height: 29px;
+				background-color:@icon-button-search-bg-color;
+				cursor: pointer;
+				border:1px solid #ccc;
+				border-left: none;
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+				&:hover {
+					//background-color: @icon-button-search-bg-hover-color;
+					border-color: #c6c6c6;
+					background: #f0f0f0;
+					box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+				}
+			}
+			.keyboard-box img {
+				padding-top: 10px;
+				margin-right: 5px;
+				width:19px;
+				height:11px;
+				margin-left: -24px;
+				opacity: 0.55;
+				cursor: pointer;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			.add-video {
+				padding-right: 40px;
+				a {
+					background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
+					background-size: auto;
+					width: 24px;
+					height: 24px;
+					opacity: 0.55;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+			.g-account {
+				a {
+					text-decoration: none;
+					color: white;
+				}
+				.message{
+					background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -391px -391px;
+					width: 30px;
+					height: 30px;
+					opacity: 0.50;
+					margin-right: 13px;
+					&:hover {
+						opacity: 1;
+					}
+				}
+				.google-account {
+					justify-content: center;
+					align-items: center;
+					width: 30px;
+					height: 30px;
+					border-radius: 15px;
+					background-color: @icon-google-account-bg-color;
+					text-align: center;
+					vertical-align: center;
+				}
+			}
 			a {
-				text-decoration: none;
-				font-size: 13px;
-				&:active {
-					font-weight: bold;
-					font-size: 12px;
+				color: #666;
+				&:active{
+					padding-bottom: 10px;
+					border-bottom: 3px solid #cc181e;
+				}
+			}
+			.menu-bottom-header{
+				border-top: 1px solid @border-header;
+				.list-menu-bottom-header {
+					display: flex;
+					list-style: none;
+					justify-content:center;
+					padding: 0px;
+					background-color: white;
+					li {
+						margin: 0px 15px;
+						a {
+							text-decoration: none;
+							font-size: 13px;
+							&:active {
+								font-weight: bold;
+								font-size: 12px;
+							}
+						}
+					}
 				}
 			}
 		}
-	}
-	&.desktop {
-		top: 51px;
-		background-color: white;
-		a {
-			color: #666;
-			&:active{
-				padding-bottom: 10px;
-				border-bottom: 3px solid #cc181e;
+		&.mobile {
+			header {
+				display:flex;
+				flex-wrap:wrap;
+				align-items:center;
+				padding: 8px 8px 8px 8px;
+				box-sizing: border-box;
+				line-height: 30px;
+				background-color: @red-header-color-mobile;
+				position: absolute;
+				width: 100%;
+				a{
+					text-decoration: none;
+				}
+				.top-header{
+					display:flex;
+					flex-wrap: nowrap;
+					justify-content: space-between;
+					width:100%;
+					.logo {
+						width: 100%;
+						max-width: 660px;
+						&>a{
+							display: flex;
+						}
+						.icon-logo{
+							width: 36px;
+							height: 26px;
+							background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
+							-webkit-background-size: 48px 1380px;
+							margin-right: 10px;
+						}
+						.region {
+							display: none;
+						}
+						.logo-name-mobile {
+							margin:0px;
+							display: flex;
+							color: white;
+							font-size: 15px;
+							font-weight: 500;
+							padding: 0px;
+							margin-right: 5px;
+							line-height: 20px;
+						}
+					}
+					.url-icon-menu {
+						order:5;
+						.icon-menu {
+							width: 24px;
+							height: 24px;
+							background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
+							-webkit-background-size: 48px 1322px;
+							opacity: 0.9;
+						}
+					}
+					.center-header {
+						display: flex;
+						input {
+							.hide;
+						}
+						.img-keyboard{
+							.hide;
+						}
+						.g-account{
+							.hide;
+						}
+						button{
+							border: none;
+							order:4;
+							&.icon-button-search{
+								background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
+								width: 24px;
+								height: 24px;
+								-webkit-background-size: 48px 1380px;
+								opacity: 0.9;
+								.icon-button-search-span {
+									.hide;
+								}
+							}
+						}
+					}
+				}
 			}
-		}
-	}
-	&.mobile {
-		top:105px;
-		background-color: @red-header-color-mobile;
-		a {
-			color: #73100b;
-			&:active{
-				padding-bottom: 10px;
-				border-bottom: 3px solid #73100b;
+			.menu-bottom-header{
+				display: flex;
+			}
+			div, sup, a, input, img, ul, li{
+					display: flex;
 			}
 		}
 	}

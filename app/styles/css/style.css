@@ -1,303 +1,122 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Roboto, arial, sans-serif;
-  font-size: 13px;
-  background-color: #f1f1f1;
+/*
+
+.mobile {
+	header {
+		display:flex;
+		flex-wrap:wrap;
+		padding: 0px 0px 0px 0px;
+		box-sizing: border-box;
+		line-height: 30px;
+		background-color: @red-header-color-mobile;
+		position: absolute;
+	}
+	.first-line-header-mobile {
+		display:flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 50px;
+		width: 100%;
+		padding: 0px 10px 0px 10px;
+		.left-first-line-header-mobile {
+			display:flex;
+			.logo-mobile {
+				display: flex;
+				width: 36px;
+				height: 26px;
+				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
+				-webkit-background-size: 48px 1380px;
+				margin-right: 10px;
+			}
+			a {
+				text-decoration: none;
+				display:flex;
+				align-items: center;
+			}
+			.logo-name-mobile {
+				display: flex;
+				color: white;
+				font-size: 15px;
+				font-weight: 500;
+				padding: 0px;
+				margin-right: 5px;
+			}
+		}
+		.right-first-line-header-mobile {
+			display:flex;
+			justify-content:flex-end;
+			flex-grow: 2;
+			max-width: 100%;
+			height: 27px;
+			.search-button-mobile {
+				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
+				width: 24px;
+				height: 24px;
+				-webkit-background-size: 48px 1380px;
+				opacity: 0.9;
+			}
+			.menu-mobile {
+				width: 24px;
+				height: 24px;
+				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
+				-webkit-background-size: 48px 1322px;
+				opacity: 0.9;
+			}
+			.div-input-mobile {
+				width: 100%;
+				padding: 0px;
+				margin:0px;
+				.search-mobile-input {
+					max-width: 100%;
+					display: flex;
+					outline: none;
+					vertical-align: center;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	.second-line-header-mobile {
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+		min-height: 56px;
+		width: 100%;
+		.home-mobile {
+			opacity: 1;
+			width: 24px;
+			height: 24px;
+			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
+			background-size: 48px 1322px;
+			-webkit-background-size: 48px 1322px;
+		}
+		.in-trend-mobile {
+			opacity: 0.5;
+			width: 24px;
+			height: 24px;
+			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
+			-webkit-background-size: 48px 1322px;
+		}
+		.subscriptions-mobile {
+			opacity: 0.5;
+			width: 24px;
+			height: 24px;
+			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
+			-webkit-background-size: 48px 1322px;
+		}
+		.account-mobile {
+			opacity: 0.5;
+			width: 24px;
+			height: 24px;
+			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
+			-webkit-background-size: 48px 1322px;
+		}
+	}
+	.background-opacity {
+		background: rgba(0,0,0,0.65);
+	}
 }
-header {
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  margin: 0px;
-  border-bottom: 1px solid #e8e8e8;
-}
-header:hover .icon-menu {
-  opacity: 1;
-}
-header .icon-menu {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
-  width: 16px;
-  height: 24px;
-  opacity: 0.6;
-  margin-top: 4px;
-  margin-right: 14px;
-}
-header .icon-menu:hover {
-  opacity: 1;
-}
-.top-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 10px 0px 10px 42px;
-}
-.top-header a {
-  text-decoration: none;
-}
-.top-header div,
-.top-header sup,
-.top-header a,
-.top-header input,
-.top-header img {
-  display: flex;
-}
-.left-header {
-  width: 4%;
-  margin-right: 134px;
-}
-.right-header {
-  width: 20%;
-  padding-left: 90px;
-}
-.icon-menu {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflm-serG.webp) -392px -337px;
-  background-size: auto;
-  width: 16px;
-  height: 16px;
-  margin-top: 7px;
-  margin-right: 14px;
-  color: #333;
-}
-.icon-logo {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -425px -391px;
-  width: 73px;
-  height: 30px;
-}
-.region {
-  color: #767676;
-  font-size: 10px;
-  font-weight: 500;
-}
-.input-search {
-  width: 90%;
-}
-input {
-  width: 100%;
-  max-width: 580px;
-  height: 27px;
-  padding: 0px 0px 0px 7px;
-  line-height: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  outline: none;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 2px #eee;
-}
-input:hover {
-  border: 1px solid #b9b9b9;
-  border-top-color: #a0a0a0;
-  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
-}
-::-webkit-input-placeholder {
-  color: #808080;
-}
-::-moz-placeholder {
-  color: #808080;
-}
-/* Firefox 19+ */
-:-moz-placeholder {
-  color: #808080;
-}
-/* Firefox 18- */
-:-ms-input-placeholder {
-  color: #808080;
-}
-.icon-button-search-span {
-  border: none;
-  display: block;
-  opacity: .6;
-  padding: 0;
-  text-indent: -10000px;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflm-serG.webp) -320px -331px;
-  background-size: auto;
-  width: 15px;
-  height: 15px;
-  box-shadow: none;
-  margin: 0 18px;
-}
-.icon-button-search {
-  height: 29px;
-  background-color: #f8f8f8;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-left: none;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-.icon-button-search:hover {
-  border-color: #c6c6c6;
-  background: #f0f0f0;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-.keyboard-box img {
-  padding-top: 10px;
-  margin-right: 5px;
-  width: 19px;
-  height: 11px;
-  margin-left: -24px;
-  opacity: 0.55;
-  cursor: pointer;
-}
-.keyboard-box img:hover {
-  opacity: 1;
-}
-.add-video {
-  padding-right: 40px;
-}
-.add-video a {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
-  background-size: auto;
-  width: 24px;
-  height: 24px;
-  opacity: 0.55;
-}
-.add-video a:hover {
-  opacity: 1;
-}
-.g-account a {
-  text-decoration: none;
-  color: white;
-}
-.g-account .message {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -391px -391px;
-  width: 30px;
-  height: 30px;
-  opacity: 0.50;
-  margin-right: 13px;
-}
-.g-account .message:hover {
-  opacity: 1;
-}
-.g-account .google-account {
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #59391d;
-  text-align: center;
-  vertical-align: center;
-}
-.mobile-version {
-  display: block;
-}
-.mobile-version header {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px 0px 0px 0px;
-  box-sizing: border-box;
-  line-height: 30px;
-  background-color: #e62117;
-  position: absolute;
-}
-.mobile-version .first-line-header-mobile {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 50px;
-  width: 100%;
-  padding: 0px 10px 0px 10px;
-}
-.mobile-version .first-line-header-mobile .left-first-line-header-mobile {
-  display: flex;
-}
-.mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-mobile {
-  display: flex;
-  width: 36px;
-  height: 26px;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
-  -webkit-background-size: 48px 1380px;
-  margin-right: 10px;
-}
-.mobile-version .first-line-header-mobile .left-first-line-header-mobile a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-.mobile-version .first-line-header-mobile .left-first-line-header-mobile .logo-name-mobile {
-  display: flex;
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 0px;
-  margin-right: 5px;
-}
-.mobile-version .first-line-header-mobile .right-first-line-header-mobile {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 2;
-  max-width: 100%;
-  height: 27px;
-}
-.mobile-version .first-line-header-mobile .right-first-line-header-mobile .search-button-mobile {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
-  width: 24px;
-  height: 24px;
-  -webkit-background-size: 48px 1380px;
-  opacity: 0.9;
-}
-.mobile-version .first-line-header-mobile .right-first-line-header-mobile .menu-mobile {
-  width: 24px;
-  height: 24px;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
-  -webkit-background-size: 48px 1322px;
-  opacity: 0.9;
-}
-.mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-.mobile-version .first-line-header-mobile .right-first-line-header-mobile .div-input-mobile .search-mobile-input {
-  max-width: 100%;
-  display: flex;
-  outline: none;
-  vertical-align: center;
-  margin-right: 5px;
-}
-.mobile-version .second-line-header-mobile {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 56px;
-  width: 100%;
-}
-.mobile-version .second-line-header-mobile .home-mobile {
-  opacity: 1;
-  width: 24px;
-  height: 24px;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
-  background-size: 48px 1322px;
-  -webkit-background-size: 48px 1322px;
-}
-.mobile-version .second-line-header-mobile .in-trend-mobile {
-  opacity: 0.5;
-  width: 24px;
-  height: 24px;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
-  -webkit-background-size: 48px 1322px;
-}
-.mobile-version .second-line-header-mobile .subscriptions-mobile {
-  opacity: 0.5;
-  width: 24px;
-  height: 24px;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
-  -webkit-background-size: 48px 1322px;
-}
-.mobile-version .second-line-header-mobile .account-mobile {
-  opacity: 0.5;
-  width: 24px;
-  height: 24px;
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
-  -webkit-background-size: 48px 1322px;
-}
-.background-opacity {
-  background: rgba(0, 0, 0, 0.65);
-}
+*/
 .content {
   display: flex;
   max-width: 1000px;
@@ -322,46 +141,301 @@ input:hover {
 .full-width {
   width: 100%;
 }
-.responsive {
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body.responsive {
   position: absolute;
   width: 100%;
 }
-.responsive .list-menu-bottom-header {
+body.responsive.desktop {
+  box-sizing: border-box;
+  font-family: Roboto, arial, sans-serif;
+  font-size: 13px;
+  background-color: #f1f1f1;
+}
+body.responsive.desktop header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  margin: 0px;
+  border-bottom: 1px solid #e8e8e8;
+}
+body.responsive.desktop header:hover .icon-menu {
+  opacity: 1;
+}
+body.responsive.desktop header .icon-menu {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
+  width: 16px;
+  height: 24px;
+  opacity: 0.6;
+  margin-top: 4px;
+  margin-right: 14px;
+}
+body.responsive.desktop header .icon-menu:hover {
+  opacity: 1;
+}
+body.responsive.desktop .top-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px 0px 10px 42px;
+}
+body.responsive.desktop .top-header a {
+  text-decoration: none;
+}
+body.responsive.desktop .top-header div,
+body.responsive.desktop .top-header sup,
+body.responsive.desktop .top-header a,
+body.responsive.desktop .top-header input,
+body.responsive.desktop .top-header img {
+  display: flex;
+}
+body.responsive.desktop .left-header {
+  width: 4%;
+  margin-right: 134px;
+}
+body.responsive.desktop .right-header {
+  width: 20%;
+  padding-left: 90px;
+}
+body.responsive.desktop .icon-menu {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflm-serG.webp) -392px -337px;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
+  margin-top: 7px;
+  margin-right: 14px;
+  color: #333;
+}
+body.responsive.desktop .icon-logo {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -425px -391px;
+  width: 73px;
+  height: 30px;
+}
+body.responsive.desktop .region {
+  color: #767676;
+  font-size: 10px;
+  font-weight: 500;
+}
+body.responsive.desktop .input-search {
+  width: 90%;
+}
+body.responsive.desktop input {
+  width: 100%;
+  max-width: 580px;
+  height: 27px;
+  padding: 0px 0px 0px 7px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 2px #eee;
+}
+body.responsive.desktop input:hover {
+  border: 1px solid #b9b9b9;
+  border-top-color: #a0a0a0;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+body.responsive.desktop .icon-button-search-span {
+  border: none;
+  display: block;
+  opacity: .6;
+  padding: 0;
+  text-indent: -10000px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflm-serG.webp) -320px -331px;
+  background-size: auto;
+  width: 15px;
+  height: 15px;
+  box-shadow: none;
+  margin: 0 18px;
+}
+body.responsive.desktop .icon-button-search {
+  height: 29px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+body.responsive.desktop .icon-button-search:hover {
+  border-color: #c6c6c6;
+  background: #f0f0f0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+body.responsive.desktop .keyboard-box img {
+  padding-top: 10px;
+  margin-right: 5px;
+  width: 19px;
+  height: 11px;
+  margin-left: -24px;
+  opacity: 0.55;
+  cursor: pointer;
+}
+body.responsive.desktop .keyboard-box img:hover {
+  opacity: 1;
+}
+body.responsive.desktop .add-video {
+  padding-right: 40px;
+}
+body.responsive.desktop .add-video a {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
+  background-size: auto;
+  width: 24px;
+  height: 24px;
+  opacity: 0.55;
+}
+body.responsive.desktop .add-video a:hover {
+  opacity: 1;
+}
+body.responsive.desktop .g-account a {
+  text-decoration: none;
+  color: white;
+}
+body.responsive.desktop .g-account .message {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -391px -391px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.50;
+  margin-right: 13px;
+}
+body.responsive.desktop .g-account .message:hover {
+  opacity: 1;
+}
+body.responsive.desktop .g-account .google-account {
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #59391d;
+  text-align: center;
+  vertical-align: center;
+}
+body.responsive.desktop a {
+  color: #666;
+}
+body.responsive.desktop a:active {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #cc181e;
+}
+body.responsive.desktop .menu-bottom-header {
+  border-top: 1px solid #e8e8e8;
+}
+body.responsive.desktop .menu-bottom-header .list-menu-bottom-header {
   display: flex;
   list-style: none;
   justify-content: center;
   padding: 0px;
+  background-color: white;
 }
-.responsive .list-menu-bottom-header li {
+body.responsive.desktop .menu-bottom-header .list-menu-bottom-header li {
   margin: 0px 15px;
 }
-.responsive .list-menu-bottom-header li a {
+body.responsive.desktop .menu-bottom-header .list-menu-bottom-header li a {
   text-decoration: none;
   font-size: 13px;
 }
-.responsive .list-menu-bottom-header li a:active {
+body.responsive.desktop .menu-bottom-header .list-menu-bottom-header li a:active {
   font-weight: bold;
   font-size: 12px;
 }
-.responsive.desktop {
-  top: 51px;
-  background-color: white;
-}
-.responsive.desktop a {
-  color: #666;
-}
-.responsive.desktop a:active {
-  padding-bottom: 10px;
-  border-bottom: 3px solid #cc181e;
-}
-.responsive.mobile {
-  top: 105px;
+body.responsive.mobile header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 8px 8px 8px;
+  box-sizing: border-box;
+  line-height: 30px;
   background-color: #e62117;
+  position: absolute;
+  width: 100%;
 }
-.responsive.mobile a {
-  color: #73100b;
+body.responsive.mobile header a {
+  text-decoration: none;
 }
-.responsive.mobile a:active {
-  padding-bottom: 10px;
-  border-bottom: 3px solid #73100b;
+body.responsive.mobile header .top-header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+body.responsive.mobile header .top-header .logo {
+  width: 100%;
+  max-width: 660px;
+}
+body.responsive.mobile header .top-header .logo > a {
+  display: flex;
+}
+body.responsive.mobile header .top-header .logo .icon-logo {
+  width: 36px;
+  height: 26px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
+  -webkit-background-size: 48px 1380px;
+  margin-right: 10px;
+}
+body.responsive.mobile header .top-header .logo .region {
+  display: none;
+}
+body.responsive.mobile header .top-header .logo .logo-name-mobile {
+  margin: 0px;
+  display: flex;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px;
+  margin-right: 5px;
+  line-height: 20px;
+}
+body.responsive.mobile header .top-header .url-icon-menu {
+  order: 5;
+}
+body.responsive.mobile header .top-header .url-icon-menu .icon-menu {
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
+  -webkit-background-size: 48px 1322px;
+  opacity: 0.9;
+}
+body.responsive.mobile header .top-header .center-header {
+  display: flex;
+}
+body.responsive.mobile header .top-header .center-header input {
+  display: none;
+}
+body.responsive.mobile header .top-header .center-header .img-keyboard {
+  display: none;
+}
+body.responsive.mobile header .top-header .center-header .g-account {
+  display: none;
+}
+body.responsive.mobile header .top-header .center-header button {
+  border: none;
+  order: 4;
+}
+body.responsive.mobile header .top-header .center-header button.icon-button-search {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
+  width: 24px;
+  height: 24px;
+  -webkit-background-size: 48px 1380px;
+  opacity: 0.9;
+}
+body.responsive.mobile header .top-header .center-header button.icon-button-search .icon-button-search-span {
+  display: none;
+}
+body.responsive.mobile .menu-bottom-header {
+  display: flex;
+}
+body.responsive.mobile div,
+body.responsive.mobile sup,
+body.responsive.mobile a,
+body.responsive.mobile input,
+body.responsive.mobile img,
+body.responsive.mobile ul,
+body.responsive.mobile li {
+  display: flex;
 }

@@ -10,14 +10,16 @@ function desktop(){
 	mobileVersion.classList.remove('mobile-version');
 	desktopVersion.classList.remove('hide');
 	desktopVersion.classList.add('desktop-version');
-
 }
+
 function mobile() {
 	desktopVersion.classList.add('hide');
 	mobileVersion.classList.add('mobile-version');
 	mobileVersion.classList.remove('hide');
 }
+
 widthScreen();
+
 function widthScreen() {
 	var screenWidthVar = window.outerWidth;
 	if (screenWidthVar > minWidthDesktop) {
@@ -34,6 +36,7 @@ function widthScreen() {
 
 //ФУНКЦИИ и переменные для Десктоп
 function searchFunction() {
+
 	var inpSearch = document.getElementById('inputSearch').value;
 
 	if (inpSearch == '') alert(empty);
@@ -68,6 +71,8 @@ function closeBox() {
 	menuMobile.classList.remove('hide');
 	secondLineHeaderMobile.classList.remove('background-opacity');
 }
+//Отслеживание изменения размера окна браузера и если это необходимо меняет Mobile-version на Desktop и наоборот
+	//*********************************************************************************
 window.addEventListener("resize",	widthScreen);
 
 window.onload = function() {
@@ -97,6 +102,5 @@ window.onload = function() {
 	document.getElementById('searchMobileInput').onkeypress = function (){
 		if (event.keyCode == 13) searchFunctionMobile();
 	}
-	//Отслеживание изменения размера окна браузера и если это необходимо меняет Mobile-version на Desktop и наоборот
-	//*********************************************************************************
+
 }
