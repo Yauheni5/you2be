@@ -5,32 +5,25 @@ var helloMobile = 'Это мобильная версия';
 var divVar = document.getElementsByTagName('div');
 var divInputMobileVar = document.getElementById('divInputMobile');
 
-function desktop(){
-	mobileVersion.classList.add('hide');
-	mobileVersion.classList.remove('mobile-version');
-	desktopVersion.classList.remove('hide');
-	desktopVersion.classList.add('desktop-version');
-}
-
-function mobile() {
-	desktopVersion.classList.add('hide');
-	mobileVersion.classList.add('mobile-version');
-	mobileVersion.classList.remove('hide');
-}
-
 widthScreen();
 
 function widthScreen() {
 	var screenWidthVar = window.outerWidth;
+	var elResponsiveClass = document.getElementsByClassName("responsive")[0];
+	var elOnlyMobileClass = document.getElementsByClassName("only-mobile")[0];
+	var elOnlyDesktopClass = document.getElementsByClassName("only-desktop")[0];
+
 	if (screenWidthVar > minWidthDesktop) {
-		desktop();
-		document.getElementsByClassName("responsive")[0].classList.add('desktop');
-		document.getElementsByClassName("responsive")[0].classList.remove('mobile');
+		elResponsiveClass.classList.add('desktop');
+		elResponsiveClass.classList.remove('mobile');
+		elOnlyDesktopClass.classList.remove('hide');
+		elOnlyMobileClass.classList.add('hide');
 	}
 	else {
-		mobile();
-		document.getElementsByClassName("responsive")[0].classList.add('mobile');
-		document.getElementsByClassName("responsive")[0].classList.remove('desktop');
+		elResponsiveClass.classList.add('mobile');
+		elResponsiveClass.classList.remove('desktop');
+		elOnlyDesktopClass.classList.add('hide');
+		elOnlyMobileClass.classList.remove('hide');
 	}
 }
 
@@ -89,18 +82,18 @@ window.onload = function() {
 	}
 	//Открытие поля ввода и Поиск при клике на кнопку поиск(лупа)	мобильная версия
 	//*********************************************************************************
-  document.getElementById('buttonSearchMobile').onclick = function () {
-    openbox();
-  }
+//  document.getElementById('buttonSearch').onclick = function () {
+//    openbox();
+//  }
 	//скрытие поля ввода при клике в неактивном месте
 	//*********************************************************************************
-	document.getElementById('secondLineHeaderMobile').onclick = function() {
-		closeBox();
-	}
+//	document.getElementById('secondLineHeaderMobile').onclick = function() {
+//		closeBox();
+//	}
 	//Поиск при нажатии на Enter(клавиатура) мобильная версия
 	//*********************************************************************************
-	document.getElementById('searchMobileInput').onkeypress = function (){
-		if (event.keyCode == 13) searchFunctionMobile();
-	}
+//	document.getElementById('searchMobileInput').onkeypress = function (){
+//		if (event.keyCode == 13) searchFunctionMobile();
+//	}
 
 }

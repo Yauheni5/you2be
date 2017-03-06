@@ -1,137 +1,3 @@
-/*
-
-.mobile {
-	header {
-		display:flex;
-		flex-wrap:wrap;
-		padding: 0px 0px 0px 0px;
-		box-sizing: border-box;
-		line-height: 30px;
-		background-color: @red-header-color-mobile;
-		position: absolute;
-	}
-	.first-line-header-mobile {
-		display:flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		align-items: center;
-		min-height: 50px;
-		width: 100%;
-		padding: 0px 10px 0px 10px;
-		.left-first-line-header-mobile {
-			display:flex;
-			.logo-mobile {
-				display: flex;
-				width: 36px;
-				height: 26px;
-				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
-				-webkit-background-size: 48px 1380px;
-				margin-right: 10px;
-			}
-			a {
-				text-decoration: none;
-				display:flex;
-				align-items: center;
-			}
-			.logo-name-mobile {
-				display: flex;
-				color: white;
-				font-size: 15px;
-				font-weight: 500;
-				padding: 0px;
-				margin-right: 5px;
-			}
-		}
-		.right-first-line-header-mobile {
-			display:flex;
-			justify-content:flex-end;
-			flex-grow: 2;
-			max-width: 100%;
-			height: 27px;
-			.search-button-mobile {
-				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
-				width: 24px;
-				height: 24px;
-				-webkit-background-size: 48px 1380px;
-				opacity: 0.9;
-			}
-			.menu-mobile {
-				width: 24px;
-				height: 24px;
-				background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
-				-webkit-background-size: 48px 1322px;
-				opacity: 0.9;
-			}
-			.div-input-mobile {
-				width: 100%;
-				padding: 0px;
-				margin:0px;
-				.search-mobile-input {
-					max-width: 100%;
-					display: flex;
-					outline: none;
-					vertical-align: center;
-					margin-right: 5px;
-				}
-			}
-		}
-	}
-	.second-line-header-mobile {
-		display:flex;
-		justify-content: space-around;
-		align-items: center;
-		min-height: 56px;
-		width: 100%;
-		.home-mobile {
-			opacity: 1;
-			width: 24px;
-			height: 24px;
-			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
-			background-size: 48px 1322px;
-			-webkit-background-size: 48px 1322px;
-		}
-		.in-trend-mobile {
-			opacity: 0.5;
-			width: 24px;
-			height: 24px;
-			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
-			-webkit-background-size: 48px 1322px;
-		}
-		.subscriptions-mobile {
-			opacity: 0.5;
-			width: 24px;
-			height: 24px;
-			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
-			-webkit-background-size: 48px 1322px;
-		}
-		.account-mobile {
-			opacity: 0.5;
-			width: 24px;
-			height: 24px;
-			background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
-			-webkit-background-size: 48px 1322px;
-		}
-	}
-	.background-opacity {
-		background: rgba(0,0,0,0.65);
-	}
-}
-*/
-.content {
-  display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.left-content-column {
-  width: 70%;
-}
-.left-content-column .main-video video {
-  max-width: 700px;
-  height: 500px;
-}
-.right-content-column {
-  width: 30%;
-}
 .disp-flex {
   display: flex;
 }
@@ -150,82 +16,74 @@ body.responsive {
   width: 100%;
 }
 body.responsive.desktop {
-  box-sizing: border-box;
   font-family: Roboto, arial, sans-serif;
   font-size: 13px;
   background-color: #f1f1f1;
 }
 body.responsive.desktop header {
+  display: flex;
   background-color: white;
   position: fixed;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0px;
   border-bottom: 1px solid #e8e8e8;
+  flex-direction: row;
+  padding: 10px 0px 10px 0px;
+  box-sizing: border-box;
+}
+body.responsive.desktop header a {
+  text-decoration: none;
+}
+body.responsive.desktop header div,
+body.responsive.desktop header sup,
+body.responsive.desktop header a,
+body.responsive.desktop header input,
+body.responsive.desktop header img {
+  display: flex;
 }
 body.responsive.desktop header:hover .icon-menu {
   opacity: 1;
+}
+body.responsive.desktop header .first-line-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 10px;
 }
 body.responsive.desktop header .icon-menu {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -392px -333px;
   width: 16px;
   height: 24px;
   opacity: 0.6;
-  margin-top: 4px;
-  margin-right: 14px;
+  margin: 4px 14px 0px 42px;
 }
 body.responsive.desktop header .icon-menu:hover {
   opacity: 1;
 }
-body.responsive.desktop .top-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 10px 0px 10px 42px;
+body.responsive.desktop header .logo-name-mobile {
+  display: none;
 }
-body.responsive.desktop .top-header a {
-  text-decoration: none;
-}
-body.responsive.desktop .top-header div,
-body.responsive.desktop .top-header sup,
-body.responsive.desktop .top-header a,
-body.responsive.desktop .top-header input,
-body.responsive.desktop .top-header img {
-  display: flex;
-}
-body.responsive.desktop .left-header {
-  width: 4%;
-  margin-right: 134px;
-}
-body.responsive.desktop .right-header {
-  width: 20%;
-  padding-left: 90px;
-}
-body.responsive.desktop .icon-menu {
-  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflm-serG.webp) -392px -337px;
-  background-size: auto;
-  width: 16px;
-  height: 16px;
-  margin-top: 7px;
-  margin-right: 14px;
-  color: #333;
-}
-body.responsive.desktop .icon-logo {
+body.responsive.desktop header .icon-logo {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -425px -391px;
   width: 73px;
   height: 30px;
 }
-body.responsive.desktop .region {
+body.responsive.desktop header .region {
   color: #767676;
   font-size: 10px;
   font-weight: 500;
+  margin-right: 70px;
 }
-body.responsive.desktop .input-search {
-  width: 90%;
-}
-body.responsive.desktop input {
+body.responsive.desktop header .search-app {
   width: 100%;
-  max-width: 580px;
+  max-width: 650px;
+  flex-grow: 2;
+}
+body.responsive.desktop header input {
+  width: 100%;
+  max-width: 640px;
   height: 27px;
   padding: 0px 0px 0px 7px;
   line-height: 30px;
@@ -235,12 +93,12 @@ body.responsive.desktop input {
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 2px #eee;
 }
-body.responsive.desktop input:hover {
+body.responsive.desktop header input:hover {
   border: 1px solid #b9b9b9;
   border-top-color: #a0a0a0;
   box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
-body.responsive.desktop .icon-button-search-span {
+body.responsive.desktop header .icon-button-search-span {
   border: none;
   display: block;
   opacity: .6;
@@ -253,7 +111,7 @@ body.responsive.desktop .icon-button-search-span {
   box-shadow: none;
   margin: 0 18px;
 }
-body.responsive.desktop .icon-button-search {
+body.responsive.desktop header .icon-button-search {
   height: 29px;
   background-color: #f8f8f8;
   cursor: pointer;
@@ -262,51 +120,38 @@ body.responsive.desktop .icon-button-search {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-body.responsive.desktop .icon-button-search:hover {
+body.responsive.desktop header .icon-button-search:hover {
   border-color: #c6c6c6;
   background: #f0f0f0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
-body.responsive.desktop .keyboard-box img {
-  padding-top: 10px;
-  margin-right: 5px;
-  width: 19px;
-  height: 11px;
-  margin-left: -24px;
-  opacity: 0.55;
-  cursor: pointer;
-}
-body.responsive.desktop .keyboard-box img:hover {
-  opacity: 1;
-}
-body.responsive.desktop .add-video {
+body.responsive.desktop header .add-video {
   padding-right: 40px;
+  width: 30%;
+  max-width: 390px;
+  justify-content: flex-end;
 }
-body.responsive.desktop .add-video a {
+body.responsive.desktop header .add-video a {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -419px -170px;
   background-size: auto;
   width: 24px;
   height: 24px;
   opacity: 0.55;
 }
-body.responsive.desktop .add-video a:hover {
+body.responsive.desktop header .add-video a:hover {
   opacity: 1;
 }
-body.responsive.desktop .g-account a {
-  text-decoration: none;
-  color: white;
-}
-body.responsive.desktop .g-account .message {
+body.responsive.desktop header .g-account .message {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -391px -391px;
   width: 30px;
   height: 30px;
   opacity: 0.50;
   margin-right: 13px;
 }
-body.responsive.desktop .g-account .message:hover {
+body.responsive.desktop header .g-account .message:hover {
   opacity: 1;
 }
-body.responsive.desktop .g-account .google-account {
+body.responsive.desktop header .g-account .google-account {
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -315,34 +160,40 @@ body.responsive.desktop .g-account .google-account {
   background-color: #59391d;
   text-align: center;
   vertical-align: center;
-}
-body.responsive.desktop a {
-  color: #666;
-}
-body.responsive.desktop a:active {
-  padding-bottom: 10px;
-  border-bottom: 3px solid #cc181e;
-}
-body.responsive.desktop .menu-bottom-header {
-  border-top: 1px solid #e8e8e8;
-}
-body.responsive.desktop .menu-bottom-header .list-menu-bottom-header {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 0px;
-  background-color: white;
-}
-body.responsive.desktop .menu-bottom-header .list-menu-bottom-header li {
-  margin: 0px 15px;
-}
-body.responsive.desktop .menu-bottom-header .list-menu-bottom-header li a {
   text-decoration: none;
   font-size: 13px;
+  color: #666;
 }
-body.responsive.desktop .menu-bottom-header .list-menu-bottom-header li a:active {
-  font-weight: bold;
-  font-size: 12px;
+body.responsive.desktop header .second-line-header {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+}
+body.responsive.desktop header .second-line-header ul {
+  justify-content: center;
+  align-items: center;
+}
+body.responsive.desktop header .second-line-header ul.list-menu-bottom-header {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+  background-color: white;
+  box-sizing: content-box;
+}
+body.responsive.desktop header .second-line-header ul.list-menu-bottom-header li {
+  margin: 0px 15px;
+}
+body.responsive.desktop header .second-line-header ul.list-menu-bottom-header li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #666;
+  line-height: 40px;
+}
+body.responsive.desktop header .second-line-header ul.list-menu-bottom-header li a:active {
+  font-size: 13px;
+  border-bottom: 3px solid #cc181e;
 }
 body.responsive.mobile header {
   display: flex;
@@ -350,7 +201,7 @@ body.responsive.mobile header {
   align-items: center;
   padding: 8px 8px 8px 8px;
   box-sizing: border-box;
-  line-height: 30px;
+  line-height: 40px;
   background-color: #e62117;
   position: absolute;
   width: 100%;
@@ -358,30 +209,31 @@ body.responsive.mobile header {
 body.responsive.mobile header a {
   text-decoration: none;
 }
-body.responsive.mobile header .top-header {
+body.responsive.mobile header .first-line-header {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
-body.responsive.mobile header .top-header .logo {
+body.responsive.mobile header .logo {
   width: 100%;
   max-width: 660px;
 }
-body.responsive.mobile header .top-header .logo > a {
+body.responsive.mobile header .logo > a {
   display: flex;
+  order: 0;
 }
-body.responsive.mobile header .top-header .logo .icon-logo {
+body.responsive.mobile header .logo .icon-logo {
   width: 36px;
   height: 26px;
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) 0px -867px;
   -webkit-background-size: 48px 1380px;
   margin-right: 10px;
 }
-body.responsive.mobile header .top-header .logo .region {
+body.responsive.mobile header .logo .region {
   display: none;
 }
-body.responsive.mobile header .top-header .logo .logo-name-mobile {
+body.responsive.mobile header .logo .logo-name-mobile {
   margin: 0px;
   display: flex;
   color: white;
@@ -391,51 +243,82 @@ body.responsive.mobile header .top-header .logo .logo-name-mobile {
   margin-right: 5px;
   line-height: 20px;
 }
-body.responsive.mobile header .top-header .url-icon-menu {
-  order: 5;
+body.responsive.mobile header .url-icon-menu {
+  order: 3;
 }
-body.responsive.mobile header .top-header .url-icon-menu .icon-menu {
+body.responsive.mobile header .url-icon-menu .icon-menu {
   width: 24px;
   height: 24px;
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -23px -1214px;
   -webkit-background-size: 48px 1322px;
   opacity: 0.9;
 }
-body.responsive.mobile header .top-header .center-header {
-  display: flex;
-}
-body.responsive.mobile header .top-header .center-header input {
+body.responsive.mobile header input {
   display: none;
 }
-body.responsive.mobile header .top-header .center-header .img-keyboard {
+body.responsive.mobile header .g-account {
   display: none;
 }
-body.responsive.mobile header .top-header .center-header .g-account {
-  display: none;
-}
-body.responsive.mobile header .top-header .center-header button {
+body.responsive.mobile header button {
   border: none;
-  order: 4;
 }
-body.responsive.mobile header .top-header .center-header button.icon-button-search {
+body.responsive.mobile header button.icon-button-search {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_tablet-set-vhigh-vflih36to.png) -22px -375px;
   width: 24px;
   height: 24px;
   -webkit-background-size: 48px 1380px;
   opacity: 0.9;
 }
-body.responsive.mobile header .top-header .center-header button.icon-button-search .icon-button-search-span {
+body.responsive.mobile header button.icon-button-search .icon-button-search-span {
   display: none;
 }
-body.responsive.mobile .menu-bottom-header {
+body.responsive.mobile header .second-line-header {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10px;
+}
+body.responsive.mobile header .second-line-header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0px;
+  width: 100%;
+}
+body.responsive.mobile header .second-line-header ul.list-menu-bottom-header {
   display: flex;
 }
-body.responsive.mobile div,
-body.responsive.mobile sup,
-body.responsive.mobile a,
-body.responsive.mobile input,
-body.responsive.mobile img,
-body.responsive.mobile ul,
-body.responsive.mobile li {
-  display: flex;
+body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li.main-toogle {
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) -22px -414px;
+  background-size: 48px 1322px;
+  -webkit-background-size: 48px 1322px;
+}
+body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li.recomendation-toogle {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -758px;
+  -webkit-background-size: 48px 1322px;
+}
+body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li.subscriptions-toogle {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1066px;
+  -webkit-background-size: 48px 1322px;
+}
+body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li.g-account-mobile {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/mobile-atom_phone-set-vhigh-vfl0k0JHQ.png) 0px -1122px;
+  -webkit-background-size: 48px 1322px;
+}
+body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li a {
+  display: none;
+}
+body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li:hover {
+  cursor: pointer;
 }
