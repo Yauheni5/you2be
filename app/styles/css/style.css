@@ -194,7 +194,8 @@ body.responsive.desktop header .second-line-header ul.list-menu-bottom-header li
   line-height: 40px;
 }
 body.responsive.desktop header .second-line-header ul.list-menu-bottom-header li a:active {
-  font-size: 13px;
+  margin-bottom: -3px;
+  font-size: 12px;
   font-weight: bold;
   border-bottom: 3px solid #cc181e;
 }
