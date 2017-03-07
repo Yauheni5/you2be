@@ -340,10 +340,10 @@ body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li:
   display: none;
 }
 .open-box header .logo > a {
-  max-width: 45px;
+  max-width: 47px;
 }
 .open-box header #logoDiv {
-  max-width: 45px;
+  max-width: 47px;
 }
 .open-box header .search-app {
   width: 100%;
