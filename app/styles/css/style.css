@@ -141,6 +141,9 @@ body.responsive.desktop header .add-video a {
 body.responsive.desktop header .add-video a:hover {
   opacity: 1;
 }
+body.responsive.desktop header .g-account {
+  margin-right: 40px;
+}
 body.responsive.desktop header .g-account .message {
   background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflr-7r42.webp) -391px -391px;
   width: 30px;
