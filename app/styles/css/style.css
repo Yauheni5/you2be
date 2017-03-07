@@ -199,9 +199,8 @@ body.responsive.mobile header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 8px 8px 8px 8px;
   box-sizing: border-box;
-  line-height: 40px;
+  line-height: 20px;
   background-color: #e62117;
   position: absolute;
   width: 100%;
@@ -211,13 +210,17 @@ body.responsive.mobile header a {
 }
 body.responsive.mobile header .first-line-header {
   display: flex;
+  flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
   padding-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 body.responsive.mobile header .logo {
+  flex-grow: 0;
   width: 100%;
-  max-width: 660px;
+  max-width: 700px;
 }
 body.responsive.mobile header .logo > a {
   display: flex;
@@ -253,6 +256,9 @@ body.responsive.mobile header .url-icon-menu .icon-menu {
   -webkit-background-size: 48px 1322px;
   opacity: 0.9;
 }
+body.responsive.mobile header .search-app {
+  display: flex;
+}
 body.responsive.mobile header input {
   display: none;
 }
@@ -275,7 +281,7 @@ body.responsive.mobile header button.icon-button-search .icon-button-search-span
 body.responsive.mobile header .second-line-header {
   display: flex;
   width: 100%;
-  padding-bottom: 10px;
+  padding: 15px 0px 15px 0px;
 }
 body.responsive.mobile header .second-line-header ul {
   display: flex;
@@ -321,4 +327,25 @@ body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li 
 }
 body.responsive.mobile header .second-line-header ul.list-menu-bottom-header li:hover {
   cursor: pointer;
+}
+.open-box header .icon-menu,
+.open-box header #logoMobileText {
+  display: none;
+}
+.open-box header .logo > a {
+  max-width: 45px;
+}
+.open-box header #logoDiv {
+  max-width: 45px;
+}
+.open-box header .search-app {
+  width: 100%;
+}
+.open-box header .search-app > #inputSearch {
+  display: flex;
+  width: 100%;
+  padding-left: 10px;
+}
+.open-box header .second-line-header {
+  background-color: rgba(0, 0, 0, 0.85);
 }

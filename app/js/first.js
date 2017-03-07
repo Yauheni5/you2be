@@ -3,7 +3,7 @@ var hello = 'Мы рады видеть Вас!';
 var empty = 'Пожалуйста, введите значение для поиска';
 var helloMobile = 'Это мобильная версия';
 var divVar = document.getElementsByTagName('div');
-var divInputMobileVar = document.getElementById('divInputMobile');
+var inputSearchVar = document.getElementById('inputSearch');
 
 widthScreen();
 
@@ -18,67 +18,58 @@ function widthScreen() {
 		elResponsiveClass.classList.remove('mobile');
 		elOnlyDesktopClass.classList.remove('hide');
 		elOnlyMobileClass.classList.add('hide');
+		document.getElementById('buttonSearch').onclick = function() {
+			searchFunction();
+		}
 	}
 	else {
 		elResponsiveClass.classList.add('mobile');
 		elResponsiveClass.classList.remove('desktop');
 		elOnlyDesktopClass.classList.add('hide');
 		elOnlyMobileClass.classList.remove('hide');
+		document.getElementById('buttonSearch').onclick = function() {
+			openBox();
+		}
 	}
 }
 
 //ФУНКЦИИ и переменные для Десктоп
-function searchFunction() {
-
-	var inpSearch = document.getElementById('inputSearch').value;
-
-	if (inpSearch == '') alert(empty);
-	else alert(inpSearch);
-}
 
 //ФУНКЦИИ и переменные для Мобильных устройств
 //*********************************************************************************
-function searchFunctionMobile() {
-  var inpSearchMobile = document.getElementById('searchMobileInput').value;
 
-	if (inpSearchMobile == '') alert(empty);
-	else alert(inpSearchMobile.split(' ').reverse().join(' '));
-}
+function searchFunction() {
 
-function openbox() {
-  if (divInputMobileVar.classList.contains('hide')) {
-	  logoNameMobile.classList.remove('logo-name-mobile');
-		divInputMobileVar.classList.remove('hide');
-		divInputMobileVar.classList.add('disp-flex');
-		logoNameMobile.classList.add('hide');
-		menuMobile.classList.add('hide');
-		secondLineHeaderMobile.classList.add('background-opacity');
-  } else searchFunctionMobile();
+			var inpSearch = document.getElementById('inputSearch').value;
+
+			if (inpSearch == '') alert(empty);
+			else alert(inpSearch);
+		}
+
+function openBox() {
+	if (document.getElementsByClassName("responsive")[0].classList.contains('open-box')) {
+		searchFunction();
+	} else document.getElementsByClassName("responsive")[0].classList.add('open-box');
+	return
 }
 
 function closeBox() {
-	divInputMobileVar.classList.add('hide');
-  divInputMobileVar.classList.remove('disp-flex');
-  logoNameMobile.classList.add('logo-name-mobile');
-  logoNameMobile.classList.remove('hide');
-	menuMobile.classList.remove('hide');
-	secondLineHeaderMobile.classList.remove('background-opacity');
+	document.getElementsByClassName("responsive")[0].classList.remove('open-box');
 }
 //Отслеживание изменения размера окна браузера и если это необходимо меняет Mobile-version на Desktop и наоборот
 	//*********************************************************************************
-window.addEventListener("resize",	widthScreen);
+	window.addEventListener("resize",	widthScreen);
 
-window.onload = function() {
+	window.onload = function() {
 	//Общие функции и переменные
 //*********************************************************************************
 	//Поиск при клике на кнопку поиск(лупа)	десктопная версия
 	//*********************************************************************************
-	document.getElementById('buttonSearch').onclick = function() {
-		searchFunction();}
+
 	//Поиск при нажатии на Enter(клавиатура)
 	//*********************************************************************************
 	document.getElementById('inputSearch').onkeypress = function (){
-	  if (event.keyCode == 13) searchFunction();
+		if (event.keyCode == 13) searchFunction();
 	}
 	//Открытие поля ввода и Поиск при клике на кнопку поиск(лупа)	мобильная версия
 	//*********************************************************************************
@@ -87,9 +78,9 @@ window.onload = function() {
 //  }
 	//скрытие поля ввода при клике в неактивном месте
 	//*********************************************************************************
-//	document.getElementById('secondLineHeaderMobile').onclick = function() {
-//		closeBox();
-//	}
+	document.getElementById('secondLineHeaderMobile').onclick = function() {
+		closeBox();
+	}
 	//Поиск при нажатии на Enter(клавиатура) мобильная версия
 	//*********************************************************************************
 //	document.getElementById('searchMobileInput').onkeypress = function (){
